@@ -1,5 +1,5 @@
 <template>
-  <div class="contacts">
+  <div class="publications_page">
     <div class="main_title">
       <div class="normal">{{ pageTitle[selectedLang].normal }}<div class="colored">{{ pageTitle[selectedLang].colored }}
         </div>
@@ -53,12 +53,12 @@ export default {
 </script>
 
 <style>
-.contacts {
+.publications_page {
   min-height: 85vh;
   display: flex;
   align-items: flex-start;
   padding-top: 1em;
-  width: 75vw;
+  width: 90vw;
   flex-direction: column;
   max-height: 85vh;
   box-sizing: border-box;
