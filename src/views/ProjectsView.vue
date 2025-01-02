@@ -164,6 +164,7 @@ swiper-slide {
 .project_slider {
   position: relative;
   width: 100%;
+  max-width: 1200px;
 }
 
 .main_title {
