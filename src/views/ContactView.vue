@@ -16,8 +16,8 @@
       <div class="col right_col">
         <DetailComponent text="mihail9512@gmail.com" icon="envelope-open" set="fas"
           link="mailto:mihail9512@gmail.com" />
-        <DetailComponent text="mihail.chifligarov@ruhr-uni-bochum.de" icon="envelope" set="fas"
-          link="mailto:mihail.chifligarov@ruhr-uni-bochum.de" />
+        <DetailComponent text="mihail.chifligarov@rub.de" icon="envelope" set="fas"
+          link="mailto:mihail.chifligarov@rub.de" />
         <DetailComponent text="mihail95" icon="square-github" set="fab" link="https://github.com/mihail95" />
         <DetailComponent text="Mihail Chifligarov" icon="linkedin" set="fab"
           link="https://www.linkedin.com/in/mihail-chifligarov-77150510a/" />
@@ -71,7 +71,7 @@ export default {
   display: flex;
   align-items: flex-start;
   padding-top: 1em;
-  width: 80vw;
+  width: 90vw;
   flex-direction: column;
   max-height: 85vh;
   box-sizing: border-box;

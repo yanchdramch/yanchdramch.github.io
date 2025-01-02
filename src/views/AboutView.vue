@@ -81,7 +81,7 @@ export default {
   display: flex;
   align-items: flex-start;
   padding-top: 1em;
-  width: 80vw;
+  width: 90vw;
   flex-direction: column;
   max-height: 85vh;
   box-sizing: border-box;

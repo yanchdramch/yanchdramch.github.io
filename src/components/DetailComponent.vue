@@ -42,7 +42,7 @@ export default {
 .detail_wrapper {
     display: flex;
     flex-direction: row;
-    width: 95%;
+    width: 85%;
     flex-wrap: nowrap;
     text-wrap: nowrap;
     background-color: #222;
