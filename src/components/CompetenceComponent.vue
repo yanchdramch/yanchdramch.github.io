@@ -100,6 +100,16 @@ export default {
     flex-basis: max-content;
 }
 
+@media (max-width: 400px) {
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .surname {
+        font-size: 2.5rem;
+    }
+}
+
 .competencies {
     position: relative;
     text-transform: uppercase;

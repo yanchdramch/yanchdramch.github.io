@@ -167,6 +167,7 @@ export default {
   border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
   padding-bottom: 1.5rem;
   margin-bottom: 1.5em;
+  max-width: 90%;
 }
 
 :deep(.detail_wrapper) {
