@@ -12,11 +12,11 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faLocationDot, faEnvelope, faGraduationCap, faBuildingColumns, faBriefcase, faEnvelopeOpen, faCalendarDay } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot, faEnvelope, faGraduationCap, faBuildingColumns, faBriefcase, faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons'
 import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faLocationDot, faEnvelope, faGraduationCap, faSquareGithub, faLinkedin, faBuildingColumns, faBriefcase, faEnvelopeOpen, faCalendarDay)
+library.add(faLocationDot, faEnvelope, faGraduationCap, faSquareGithub, faLinkedin, faBuildingColumns, faBriefcase, faEnvelopeOpen)
 
 /* import and register Swiper custom elements */
 import { register } from 'swiper/element/bundle';

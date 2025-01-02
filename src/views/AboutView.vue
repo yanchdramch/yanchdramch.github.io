@@ -9,7 +9,6 @@
     <div class="details">
       <div class="col leftcol">
         <img src="/images/profile-picture.png" alt="profile picture" class="picture">
-        <DetailComponent text="1995" icon="calendar-day" set="fas" />
         <DetailComponent text="Bochum, Germany" icon="location-dot" set="fas" />
         <DetailComponent text="Ruhr University Bochum" icon="building-columns" set="fas"
           link="https://www.ruhr-uni-bochum.de/en" />
