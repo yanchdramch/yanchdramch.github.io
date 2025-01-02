@@ -1,0 +1,25 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-weight: normal;
+  display: flex;
+  place-items: center;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+  padding: 3px;
+}
+
+a:hover {
+  color: #66B95C;
+}
+
+.router-link-active {
+  color: #66B95C;
+}

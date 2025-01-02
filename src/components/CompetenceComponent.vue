@@ -1,0 +1,135 @@
+<template>
+    <div class="name">{{ myName[selectedLang].normal }}<div class="surname">{{ myName[selectedLang].colored }}</div>
+    </div>
+    <div class="competencies">
+        <transition-group name="fade" tag="div">
+            <div v-for="(competency, index) in competencies" :key="index" v-show="active_item === index"
+                :style="{ fontWeight: '600' }" class="competency">
+                {{ competency[selectedLang] }}
+            </div>
+        </transition-group>
+    </div>
+</template>
+
+<script setup>
+import { languageStore } from '@/stores/language.js'
+import { ref, watch } from 'vue';
+
+const store = languageStore()
+const selectedLang = ref(store.language);
+
+watch(
+    () => store.language,
+    (newLang) => {
+        selectedLang.value = newLang;
+    }
+);
+</script>
+
+<script>
+export default {
+    name: "CompetenceComponent",
+    mounted: function () {
+        this.timer = setInterval(() => {
+            this.active_item = (this.active_item + 1) % this.competencies.length;
+        }, 3000)
+    },
+
+    data() {
+        return {
+            timer: null,
+            active_item: 0,
+            myName: {
+                "en": { "normal": "Mihail ", "colored": "Chifligarov" },
+                "de": { "normal": "Mihail ", "colored": "Chifligarov" },
+                "bg": { "normal": "Михаил ", "colored": "Чифлигаров" },
+            },
+            competencies: [
+                {
+                    "en": "Full-stack Development",
+                    "de": "Full-stack Entwicklung",
+                    "bg": "Full-stack Разработка"
+                },
+                {
+                    "en": "Computational Linguistics",
+                    "de": "Computerlinguistik",
+                    "bg": "Компютърна Лингвистика"
+                },
+                {
+                    "en": "Data Science",
+                    "de": "Datenwissenschaft",
+                    "bg": "Наука за Данни"
+                },
+                {
+                    "en": "Machine Learning",
+                    "de": "Maschinelles Lernen",
+                    "bg": "Машинно Обучение"
+                }
+            ]
+        };
+    },
+
+    beforeDestroy() {
+        clearInterval(this.timer);
+        active_item = 0;
+    }
+};
+</script>
+
+<style scoped>
+.name {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    white-space: break-spaces;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-bottom: -0.5rem;
+}
+
+.surname {
+    color: #66B95C;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: max-content;
+}
+
+.competencies {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    min-height: 4rem;
+    padding-top: 0.5em;
+}
+
+.competency {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: all 0.5s ease-out;
+}
+
+.fade-enter-from {
+    transform: translateY(10px);
+    opacity: 0;
+}
+
+.fade-leave-to {
+    transform: translateY(-10px);
+    opacity: 0;
+}
+</style>
