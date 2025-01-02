@@ -128,7 +128,7 @@ export default {
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  min-width: 23rem;
+  min-width: 19rem;
   width: 50%;
 }
 

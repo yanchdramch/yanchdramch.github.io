@@ -131,6 +131,7 @@ export default {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
+  justify-content: center;
 }
 
 .col {
@@ -159,7 +160,7 @@ export default {
 }
 
 :deep(.competencies) {
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 .compentences_wrapper {
