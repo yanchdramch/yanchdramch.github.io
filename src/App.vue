@@ -155,7 +155,7 @@ router-view {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 60px);
+  height: calc(100% - 60px);
   /* Full height minus header */
   text-align: center;
 }
@@ -270,7 +270,7 @@ router-view p {
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-  min-height: 50vh;
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   padding-top: 1.25em;
