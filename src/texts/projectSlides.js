@@ -7,7 +7,7 @@ export const projectSlides = [
       "bg": "Като програмист в ELIGO работя по онлайн платформата ни за тестове - Vue.js и Laravel уеб приложение за оценяване и администрация."
     },
     "link": "https://eligo.de/en/services/#perls-frontend",
-    "image": "src/assets/images/perls-duo.png" 
+    "image": "/images/perls-duo.png"
   },
   { 
     "title": { "de": "Lexical Diversity Measures" , "en": "Lexical Diversity Measures", "bg": "Lexical Diversity Measures" },
@@ -17,6 +17,6 @@ export const projectSlides = [
       "bg": "Python уеб приложение, което визуализира различни критерии за лексикално разнообразие с адаптивни променливи и интерактивни графики."
     },
     "link": "https://lexical-diversity-measures.streamlit.app/",
-    "image": "src/assets/images/ld-measures.png" 
+    "image": "/images/ld-measures.png"
   }
 ]

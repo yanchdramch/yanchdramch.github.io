@@ -112,7 +112,7 @@ body {
   background-color: black;
   color: white;
   overflow: hidden;
-  background-image: url('./assets/images/background-stars.png');
+  background-image: url('/images/background-stars.png');
 }
 
 /* Header Styling */

@@ -8,7 +8,7 @@
     </div>
     <div class="details">
       <div class="col leftcol">
-        <img src="@/assets/images/profile-picture.png" alt="profile picture" class="picture">
+        <img src="/images/profile-picture.png" alt="profile picture" class="picture">
         <DetailComponent text="22.12.1995" icon="calendar-day" set="fas" />
         <DetailComponent text="Bochum, Germany" icon="location-dot" set="fas" />
         <DetailComponent text="Ruhr University Bochum" icon="building-columns" set="fas"
