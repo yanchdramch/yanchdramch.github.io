@@ -67,4 +67,11 @@ export default {
   background-color: white;
   color: black;
 }
+
+.home_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
 </style>

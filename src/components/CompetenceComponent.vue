@@ -110,6 +110,7 @@ export default {
     align-items: self-start;
     min-height: 4rem;
     padding-top: 0.5em;
+    width: 100%;
 }
 
 .competency {
