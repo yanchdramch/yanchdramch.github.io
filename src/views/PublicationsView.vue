@@ -57,7 +57,7 @@ export default {
   min-height: 85vh;
   display: flex;
   align-items: flex-start;
-  padding: 1rem;
+  padding-top: 1em;
   width: 75vw;
   flex-direction: column;
   max-height: 85vh;

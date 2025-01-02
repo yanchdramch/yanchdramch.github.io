@@ -9,7 +9,7 @@
     <div class="details">
       <div class="col leftcol">
         <img src="/images/profile-picture.png" alt="profile picture" class="picture">
-        <DetailComponent text="22.12.1995" icon="calendar-day" set="fas" />
+        <DetailComponent text="1995" icon="calendar-day" set="fas" />
         <DetailComponent text="Bochum, Germany" icon="location-dot" set="fas" />
         <DetailComponent text="Ruhr University Bochum" icon="building-columns" set="fas"
           link="https://www.ruhr-uni-bochum.de/en" />
@@ -80,7 +80,7 @@ export default {
   min-height: 85vh;
   display: flex;
   align-items: flex-start;
-  padding: 1rem;
+  padding-top: 1em;
   width: 80vw;
   flex-direction: column;
   max-height: 85vh;
