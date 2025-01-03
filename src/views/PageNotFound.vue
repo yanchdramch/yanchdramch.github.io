@@ -1,6 +1,6 @@
 <template>
   <div class="home_wrapper">
-    <div class="normal">Error <div class="colored">404</div>
+    <div class="normal_err">Error <div class="colored_err">404</div>
     </div>
     <button class="contact_button" v-on:click="navigateToContact()">
       {{ buttonText[selectedLang] }}
@@ -62,7 +62,7 @@ export default {
   color: black;
 }
 
-.normal {
+.normal_err {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 3.5rem;
@@ -75,7 +75,7 @@ export default {
   margin-bottom: -0.5rem;
 }
 
-.colored {
+.colored_err {
   color: #66B95C;
   font-weight: 700;
   text-transform: uppercase;
