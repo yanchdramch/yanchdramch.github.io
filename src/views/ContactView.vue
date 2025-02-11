@@ -122,6 +122,7 @@ export default {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
+  justify-content: center;
 }
 
 .col {
