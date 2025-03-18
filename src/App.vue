@@ -7,8 +7,7 @@
           <nav v-if="!isSmallScreen()">
             <RouterLink to="/">{{ routeTexts.home[selectedLang] }}</RouterLink>
             <RouterLink to="/about">{{ routeTexts.about[selectedLang] }}</RouterLink>
-            <RouterLink to="/projects">{{ routeTexts.projects[selectedLang] }}</RouterLink>
-            <RouterLink to="/publications">{{ routeTexts.publications[selectedLang] }}</RouterLink>
+            <RouterLink to="/articles">{{ routeTexts.articles[selectedLang] }}</RouterLink>
             <RouterLink to="/contact">{{ routeTexts.contact[selectedLang] }}</RouterLink>
           </nav>
           <nav role="navigation" v-if="isSmallScreen()">
@@ -26,12 +25,8 @@
                   </RouterLink>
                 </li>
                 <li>
-                  <RouterLink to="/projects" v-on:click="toggleMenuCheckbox()">{{ routeTexts.projects[selectedLang] }}
-                  </RouterLink>
-                </li>
-                <li>
-                  <RouterLink to="/publications" v-on:click="toggleMenuCheckbox()">{{
-                    routeTexts.publications[selectedLang] }}</RouterLink>
+                  <RouterLink to="/articles" v-on:click="toggleMenuCheckbox()">{{
+                    routeTexts.articles[selectedLang] }}</RouterLink>
                 </li>
                 <li>
                   <RouterLink to="/contact" v-on:click="toggleMenuCheckbox()">{{ routeTexts.contact[selectedLang] }}

@@ -5,8 +5,8 @@
         </div>
       </div>
     </div>
-    <div class="publications">
-      <PublicationComponent v-for="pub in publications" :publication="pub" />
+    <div class="publications" v-for="article in articles" :key="article.path">
+      <button v-on:click="navigateToArticle(article.id)"> {{ article.title }}</button>
     </div>
   </div>
 </template>
@@ -15,10 +15,24 @@
 import PublicationComponent from '@/components/PublicationComponent.vue';
 import { publications } from '@/texts/publications';
 import { languageStore } from '@/stores/language.js'
-import { ref, watch } from 'vue';
+import { ref, watch, onMounted } from 'vue';
 
 const store = languageStore()
 const selectedLang = ref(store.language);
+
+const articles = ref([]);
+
+onMounted(async () => {
+  const modules = import.meta.glob("@/articles/*.js");
+  const loadedArticles = [];
+
+  for (const path in modules) {
+    const module = await modules[path]();
+    loadedArticles.push({ ...module.default, path });
+  }
+
+  articles.value = loadedArticles;
+});
 
 watch(
   () => store.language,
@@ -36,18 +50,23 @@ export default {
       pageTitle: {
         "de": {
           "normal": "Aktuelle ",
-          "colored": "Veröffentlichungen"
+          "colored": "Artikel"
         },
         "en": {
           "normal": "Recent ",
-          "colored": "Publications"
+          "colored": "Articles"
         },
         "bg": {
           "normal": "Актуални ",
-          "colored": "Публикации"
+          "colored": "Статии"
         }
       }
     };
+  },
+  methods: {
+    navigateToArticle(id) {
+      this.$router.push(`article/${id}`)
+    }
   },
 };
 </script>

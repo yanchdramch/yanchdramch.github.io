@@ -1,40 +1,37 @@
 <template>
-  <div class="about">
+  <div class="about" v-if="article">
     <div class="main_title">
-      <div class="normal">{{ pageTitle[selectedLang].normal }}<div class="colored">
-          {{ pageTitle[selectedLang].colored }}
-        </div>
-      </div>
+      <div class="normal">{{ article.title }}</div>
+      <div class="date">Published on: {{ article.date }}</div>
     </div>
-    <div class="details">
-      <div class="col leftcol">
-        <img src="" alt="profile picture" class="picture">
-        <DetailComponent text="Bochum, Germany" icon="location-dot" set="fas" />
-        <DetailComponent text="Ruhr University Bochum" icon="building-columns" set="fas"
-          link="https://www.ruhr-uni-bochum.de/en" />
-        <DetailComponent text="yanamail@mail.com" icon="envelope" set="fas" link="mailto:yanamail@mail.com" />
-      </div>
-      <div class="col rightcol">
-        <div class="compentences_wrapper">
-          <CompetenceComponent />
-        </div>
-        <div class="resume">
-          {{ aboutTexts.resume[selectedLang] }}
-        </div>
-
+    <div class="article_text">
+      <div v-if="article.text"> {{ article.text }} </div>
+      <div v-if="article.elements" v-for="element in article.elements">
+        <component :is="element.type" :propList="element.propList"></component>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import CompetenceComponent from '../components/CompetenceComponent.vue'
-import DetailComponent from '@/components/DetailComponent.vue';
 import { languageStore } from '@/stores/language.js'
-import { ref, watch } from 'vue';
+import { ref, watch, watchEffect } from 'vue';
+import { useRoute } from 'vue-router';
 
 const store = languageStore()
 const selectedLang = ref(store.language);
+const articleId = useRoute().params.id;
+const article = ref(null);
+const error = ref(null);
+
+watchEffect(async () => {
+  try {
+    const module = await import(`@/articles/${articleId}.js`);
+    article.value = module.default;
+  } catch (e) {
+    error.value = "Article not found.";
+  }
+});
 
 watch(
   () => store.language,
@@ -45,22 +42,18 @@ watch(
 </script>
 
 <script lang="ts">
-import { aboutTexts } from '@/texts/aboutTexts.js'
 export default {
   data() {
     return {
       pageTitle: {
         "de": {
-          "normal": "Über ",
-          "colored": "mich"
+          "normal": "Artikel",
         },
         "en": {
-          "normal": "About ",
-          "colored": "Me"
+          "normal": "Article",
         },
         "bg": {
-          "normal": "За ",
-          "colored": "Мен"
+          "normal": "Статия",
         }
       }
     };
@@ -94,7 +87,7 @@ export default {
   clear: both;
   float: left;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -111,19 +104,19 @@ export default {
   scroll-padding-top: 2.5rem;
 }
 
-.colored {
-  color: #66B95C;
-  font-weight: 700;
-  font-size: 2rem;
+.date {
+  font-weight: 400;
+  font-size: 1rem;
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: max-content;
+  margin-top: 1em;
 }
 
-.details {
+.article_text {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
   box-sizing: content-box;
@@ -131,7 +124,6 @@ export default {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
-  justify-content: center;
 }
 
 .col {

@@ -40,30 +40,20 @@ export default {
             timer: null,
             active_item: 0,
             myName: {
-                "en": { "normal": "Mihail ", "colored": "Chifligarov" },
-                "de": { "normal": "Mihail ", "colored": "Chifligarov" },
-                "bg": { "normal": "Михаил ", "colored": "Чифлигаров" },
+                "en": { "normal": "Yana ", "colored": "nemaDrama" },
+                "de": { "normal": "Yana ", "colored": "nemaDrama" },
+                "bg": { "normal": "Yana ", "colored": "немаДрама" },
             },
             competencies: [
                 {
-                    "en": "Full-stack Development",
-                    "de": "Full-stack Entwicklung",
-                    "bg": "Full-stack Разработка"
+                    "en": "Drama",
+                    "de": "Drama",
+                    "bg": "Драма"
                 },
                 {
-                    "en": "Computational Linguistics",
-                    "de": "Computerlinguistik",
-                    "bg": "Компютърна Лингвистика"
-                },
-                {
-                    "en": "Data Science",
-                    "de": "Datenwissenschaft",
-                    "bg": "Наука за Данни"
-                },
-                {
-                    "en": "Machine Learning",
-                    "de": "Maschinelles Lernen",
-                    "bg": "Машинно Обучение"
+                    "en": "No Drama",
+                    "de": "No Drama",
+                    "bg": "Нема Драма"
                 }
             ]
         };

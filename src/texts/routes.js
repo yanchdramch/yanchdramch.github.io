@@ -9,15 +9,10 @@ export const routes = {
     "en" : "About",
     "bg" : "За мен"
   },
-  "projects": {
-    "de" : "Projekte",
-    "en" : "Projects",
-    "bg" : "Проекти"
-  },
-  "publications": {
-    "de" : "Veröffentlichungen",
-    "en" : "Publications",
-    "bg" : "Публикации"
+  "articles": {
+    "de" : "Artikel",
+    "en" : "Articles",
+    "bg" : "Статии"
   },
   "contact": {
     "de" : "Kontakt",

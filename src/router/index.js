@@ -20,14 +20,14 @@ const router = createRouter({
       component: () => import('../views/ContactView.vue'),
     },
     {
-      path: '/projects',
-      name: 'projects',
-      component: () => import('../views/ProjectsView.vue'),
+      path: '/articles',
+      name: 'articles',
+      component: () => import('../views/ArticlesView.vue'),
     },
     {
-      path: '/publications',
-      name: 'publications',
-      component: () => import('../views/PublicationsView.vue'),
+      path: '/article/:id',
+      name: 'article',
+      component: () => import('../views/ArticleView.vue'),
     },
     {
       path: '/:catchAll(.*)*',

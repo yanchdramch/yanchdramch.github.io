@@ -10,14 +10,11 @@
         <DetailComponent text="Bochum, Germany" icon="location-dot" set="fas" />
         <DetailComponent text="Ruhr University Bochum" icon="building-columns" set="fas"
           link="https://www.ruhr-uni-bochum.de/en" />
-        <DetailComponent text="Linguistics" icon="graduation-cap" set="fas" />
-        <DetailComponent text="ELIGO GmbH" icon="briefcase" set="fas" link="https://eligo.de/en/" />
+        <DetailComponent text="Medien / PWG" icon="graduation-cap" set="fas" />
       </div>
       <div class="col right_col">
-        <DetailComponent text="mihail9512@gmail.com" icon="envelope-open" set="fas"
-          link="mailto:mihail9512@gmail.com" />
-        <DetailComponent text="mihail.chifligarov@rub.de" icon="envelope" set="fas"
-          link="mailto:mihail.chifligarov@rub.de" />
+        <DetailComponent text="yanadrama@rub.de" icon="envelope" set="fas"
+          link="mailto:yanadrama@rub.de" />
         <DetailComponent text="mihail95" icon="square-github" set="fab" link="https://github.com/mihail95" />
         <DetailComponent text="Mihail Chifligarov" icon="linkedin" set="fab"
           link="https://www.linkedin.com/in/mihail-chifligarov-77150510a/" />

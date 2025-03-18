@@ -29,4 +29,10 @@ app.component('font-awesome-icon', FontAwesomeIcon)
 app.use(router)
 app.use(pinia)
 
+/* Import Form Components */
+import ParagraphComponent from "./components/ArticleComponents/ParagraphComponent.vue";
+import ImageComponent from './components/ArticleComponents/ImageComponent.vue'
+app.component("paragraph", ParagraphComponent)
+app.component("image", ImageComponent)
+
 app.mount('#app')
