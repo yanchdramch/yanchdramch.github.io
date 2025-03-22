@@ -1,6 +1,12 @@
 <template>
     <div class="image_wrapper">
-        <img class="image_content" :src=path>
+        <img 
+            class="image_content" 
+            :src="propList.src" 
+            :alt="propList.alt" 
+            :width="propList.width || 'auto'" 
+            :height="propList.height || 'auto'"
+        >
     </div>
 </template>
 
@@ -16,8 +22,6 @@ export default {
     },
     data() {
         return {
-            path: this.propList.src,
-            alt: this.propList.alt,
             width: this.propList.width ? this.propList.width : 'auto',
             height: this.propList.height ? this.propList.height : 'auto',
         };
@@ -41,8 +45,8 @@ export default {
 }
 
 .image_content {
-    width: v-bind('width');
-    height: v-bind('height');
+    /* width: v-bind('width');
+    height: v-bind('height'); */
     max-width: 80%;
 }
 </style>

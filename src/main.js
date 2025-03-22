@@ -33,6 +33,6 @@ app.use(pinia)
 import ParagraphComponent from "./components/ArticleComponents/ParagraphComponent.vue";
 import ImageComponent from './components/ArticleComponents/ImageComponent.vue'
 app.component("paragraph", ParagraphComponent)
-app.component("image", ImageComponent)
+app.component("photo", ImageComponent)
 
 app.mount('#app')

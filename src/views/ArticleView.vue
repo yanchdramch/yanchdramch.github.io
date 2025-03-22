@@ -18,6 +18,8 @@ import { languageStore } from '@/stores/language.js'
 import { ref, watch, watchEffect } from 'vue';
 import { useRoute } from 'vue-router';
 
+let { isPreview = false, contents = {} } = defineProps<{ isPreview?: Boolean, contents?: Object }>()
+
 const store = languageStore()
 const selectedLang = ref(store.language);
 const articleId = useRoute().params.id;
@@ -25,11 +27,16 @@ const article = ref(null);
 const error = ref(null);
 
 watchEffect(async () => {
-  try {
-    const module = await import(`@/articles/${articleId}.js`);
-    article.value = module.default;
-  } catch (e) {
-    error.value = "Article not found.";
+  if (!isPreview){
+    try {
+      const module = await import(`@/articles/${articleId}.json`);
+      article.value = module.default;
+    } catch (e) {
+      error.value = "Article not found.";
+    }
+  }
+  else if (isPreview) {
+    article.value = contents;
   }
 });
 
@@ -69,13 +76,11 @@ export default {
 }
 
 .about {
-  min-height: 85vh;
   display: flex;
   align-items: flex-start;
   padding-top: 1em;
   width: 90vw;
   flex-direction: column;
-  max-height: 85vh;
   box-sizing: border-box;
   margin-top: 0;
   padding-bottom: 0;
@@ -177,7 +182,7 @@ export default {
   padding: 0;
 }
 
-.image {
+.photo {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;

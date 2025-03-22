@@ -13,7 +13,6 @@
 
 <script setup>
 import PublicationComponent from '@/components/PublicationComponent.vue';
-import { publications } from '@/texts/publications';
 import { languageStore } from '@/stores/language.js'
 import { ref, watch, onMounted } from 'vue';
 
@@ -23,7 +22,7 @@ const selectedLang = ref(store.language);
 const articles = ref([]);
 
 onMounted(async () => {
-  const modules = import.meta.glob("@/articles/*.js");
+  const modules = import.meta.glob("@/articles/*.json");
   const loadedArticles = [];
 
   for (const path in modules) {
@@ -46,7 +45,6 @@ watch(
 export default {
   data() {
     return {
-      publications: publications,
       pageTitle: {
         "de": {
           "normal": "Aktuelle ",
