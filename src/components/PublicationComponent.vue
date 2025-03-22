@@ -88,7 +88,7 @@ export default {
 }
 
 .title {
-  color: #66B95C;
+  color: #E1BC29;
   font-weight: 700;
   font-size: 1.25rem;
   flex-grow: 0;

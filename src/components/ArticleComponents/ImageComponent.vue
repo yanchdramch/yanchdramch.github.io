@@ -1,6 +1,6 @@
 <template>
-    <div class="detail_wrapper">
-        ...
+    <div class="image_wrapper">
+        <img class="image_content" :src=path>
     </div>
 </template>
 
@@ -13,18 +13,24 @@ export default {
     name: "ImageComponent",
     props: {
         'propList': Object,
-    }
+    },
+    data() {
+        return {
+            path: this.propList.src,
+            alt: this.propList.alt,
+            width: this.propList.width ? this.propList.width : 'auto',
+            height: this.propList.height ? this.propList.height : 'auto',
+        };
+    },
 };
 </script>
 
 <style scoped>
-.detail_wrapper {
+.image_wrapper {
     display: flex;
     flex-direction: row;
     width: 95%;
     flex-wrap: nowrap;
-    text-wrap: nowrap;
-    background-color: #222;
     border-radius: 1em;
     padding: 1em;
     margin-bottom: 1.5rem;
@@ -32,5 +38,11 @@ export default {
 
 .detail_icon {
     width: 2.5rem;
+}
+
+.image_content {
+    width: v-bind('width');
+    height: v-bind('height');
+    max-width: 80%;
 }
 </style>

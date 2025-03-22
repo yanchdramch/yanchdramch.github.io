@@ -4,19 +4,24 @@ export const routes = {
     "en" : "Home",
     "bg" : "Начало"
   },
+  "articles": {
+    "de" : "Lies",
+    "en" : "Read",
+    "bg" : "Чети"
+  },
+  "music": {
+    "de" : "Höre",
+    "en" : "Listen",
+    "bg" : "Чуй"
+  },
+  "gallery": {
+    "de" : "Siehe",
+    "en" : "See",
+    "bg" : "Виж"
+  },
   "about": {
     "de" : "Über mich",
     "en" : "About",
     "bg" : "За мен"
   },
-  "articles": {
-    "de" : "Artikel",
-    "en" : "Articles",
-    "bg" : "Статии"
-  },
-  "contact": {
-    "de" : "Kontakt",
-    "en" : "Contact",
-    "bg" : "Контакт"
-  }
 }

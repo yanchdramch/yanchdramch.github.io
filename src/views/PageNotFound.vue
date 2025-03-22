@@ -52,7 +52,7 @@ export default {
   padding: 0.85rem 2.25rem;
   font-size: 1.1rem;
   font-weight: 500;
-  background-color: #66B95C;
+  background-color: #E1BC29;
   color: white;
   border-width: 0px;
 }
@@ -76,7 +76,7 @@ export default {
 }
 
 .colored_err {
-  color: #66B95C;
+  color: #E1BC29;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 3.5rem;

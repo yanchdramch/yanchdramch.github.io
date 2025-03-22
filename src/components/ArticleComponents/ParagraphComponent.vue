@@ -1,7 +1,5 @@
 <template>
-    <div class="paragraph_wrapper">
-        {{ text }}
-    </div>
+    <div class="paragraph_wrapper" v-html="text"></div>
 </template>
 
 

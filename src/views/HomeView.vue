@@ -2,7 +2,7 @@
   <main>
     <div class="home_wrapper">
       <CompetenceComponent />
-      <button class="contact_button" v-on:click="navigateToContact()">
+      <button class="contact_button" v-on:click="navigateToAbout()">
         {{ buttonText[selectedLang] }}
       </button>
     </div>
@@ -41,8 +41,8 @@ export default {
     CompetenceComponent
   },
   methods: {
-    navigateToContact() {
-      this.$router.push('contact')
+    navigateToAbout() {
+      this.$router.push('about')
     }
   },
 };
@@ -58,7 +58,7 @@ export default {
   padding: 0.85rem 2.25rem;
   font-size: 1.1rem;
   font-weight: 500;
-  background-color: #66B95C;
+  background-color: #E1BC29;
   color: white;
   border-width: 0px;
 }

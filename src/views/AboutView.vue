@@ -8,11 +8,7 @@
     </div>
     <div class="details">
       <div class="col leftcol">
-        <img src="" alt="profile picture" class="picture">
-        <DetailComponent text="Bochum, Germany" icon="location-dot" set="fas" />
-        <DetailComponent text="Ruhr University Bochum" icon="building-columns" set="fas"
-          link="https://www.ruhr-uni-bochum.de/en" />
-        <DetailComponent text="yanamail@mail.com" icon="envelope" set="fas" link="mailto:yanamail@mail.com" />
+        <img src="/images/yana_profile.jpg" alt="profile picture" class="picture">
       </div>
       <div class="col rightcol">
         <div class="compentences_wrapper">
@@ -21,7 +17,14 @@
         <div class="resume">
           {{ aboutTexts.resume[selectedLang] }}
         </div>
-
+        <div class="icons">
+          <DetailComponent icon="youtube" set="fab" />
+          <DetailComponent icon="envelope" set="fas" link="mailto:yanamail@mail.com" />
+          <DetailComponent icon="square-pinterest" set="fab" />
+          <DetailComponent icon="linkedin" set="fab" />
+          <DetailComponent icon="square-facebook" set="fab" />
+          <DetailComponent icon="square-instagram" set="fab" />
+        </div>
       </div>
     </div>
   </div>
@@ -73,6 +76,7 @@ export default {
   border-radius: 2em;
   width: 95%;
   margin-bottom: 0.5em;
+  margin-top: 1.25em;
 }
 
 .about {
@@ -112,7 +116,7 @@ export default {
 }
 
 .colored {
-  color: #66B95C;
+  color: #E1BC29;
   font-weight: 700;
   font-size: 2rem;
   flex-grow: 0;
@@ -131,7 +135,7 @@ export default {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .col {
@@ -143,7 +147,8 @@ export default {
 }
 
 .leftcol {
-  width: 40%;
+  width: 30%;
+  flex-direction: row;
 }
 
 .rightcol {
@@ -152,7 +157,7 @@ export default {
 
 :deep(.name) {
   font-size: 2.5em;
-  padding-top: 1em;
+  padding-top: 0.5em;
 }
 
 :deep(.surname) {
@@ -180,5 +185,16 @@ export default {
 .resume {
   padding-left: 1.5em;
   padding-right: 1em;
+  margin-bottom: 1em;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: center;
 }
 </style>

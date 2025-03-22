@@ -1,14 +1,6 @@
 <template>
-    <div class="detail_wrapper">
-        <div class="detail_icon">
-            <FontAwesomeIcon :icon="[detailSet, detailIcon]" size="xl" :style="{ color: '#66B95C' }" />
-        </div>
-        <div v-if="detailURL" class="detail_link">
-            <a :href=detailURL>{{ detailText }}</a>
-        </div>
-        <div v-else class="detail_text">
-            {{ detailText }}
-        </div>
+    <div class="detail_icon">
+        <FontAwesomeIcon :icon="[detailSet, detailIcon]" size="xl" :style="{ color: '#E1BC29' }" />
     </div>
 </template>
 
@@ -52,6 +44,7 @@ export default {
 }
 
 .detail_icon {
-    width: 2.5rem;
+    font-size: 1.5em;
+    padding: 1em;
 }
 </style>

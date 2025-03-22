@@ -1,14 +1,14 @@
 <template>
     <div class="name">{{ myName[selectedLang].normal }}<div class="surname">{{ myName[selectedLang].colored }}</div>
     </div>
-    <div class="competencies">
+    <!-- <div class="competencies">
         <transition-group name="fade" tag="div">
             <div v-for="(competency, index) in competencies" :key="index" v-show="active_item === index"
                 :style="{ fontWeight: '600' }" class="competency">
                 {{ competency[selectedLang] }}
             </div>
         </transition-group>
-    </div>
+    </div> -->
 </template>
 
 <script setup>
@@ -40,9 +40,9 @@ export default {
             timer: null,
             active_item: 0,
             myName: {
-                "en": { "normal": "Yana ", "colored": "nemaDrama" },
-                "de": { "normal": "Yana ", "colored": "nemaDrama" },
-                "bg": { "normal": "Yana ", "colored": "немаДрама" },
+                "en": { "normal": "Yana ", "colored": "Dramova" },
+                "de": { "normal": "Yana ", "colored": "Dramova" },
+                "bg": { "normal": "Яна ", "colored": "Драмова" },
             },
             competencies: [
                 {
@@ -81,7 +81,7 @@ export default {
 }
 
 .surname {
-    color: #66B95C;
+    color: #E1BC29;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 3.5rem;

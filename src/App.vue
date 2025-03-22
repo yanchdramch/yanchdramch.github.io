@@ -2,15 +2,16 @@
   <div id="app">
     <header>
       <div class="wrapper">
-        <LanguageChooser v-show="!isSmallScreen()" />
+        <LanguageChooser v-show="!smallScreen" />
         <div class="routes">
-          <nav v-if="!isSmallScreen()">
+          <nav v-if="!smallScreen">
             <RouterLink to="/">{{ routeTexts.home[selectedLang] }}</RouterLink>
-            <RouterLink to="/about">{{ routeTexts.about[selectedLang] }}</RouterLink>
             <RouterLink to="/articles">{{ routeTexts.articles[selectedLang] }}</RouterLink>
-            <RouterLink to="/contact">{{ routeTexts.contact[selectedLang] }}</RouterLink>
+            <RouterLink to="/music">{{ routeTexts.music[selectedLang] }}</RouterLink>
+            <RouterLink to="/gallery">{{ routeTexts.gallery[selectedLang] }}</RouterLink>
+            <RouterLink to="/about">{{ routeTexts.about[selectedLang] }}</RouterLink>
           </nav>
-          <nav role="navigation" v-if="isSmallScreen()">
+          <nav role="navigation" v-if="smallScreen">
             <div id="menuToggle">
               <input type="checkbox" id="menuCheckbox" v-model="clicked" />
               <span></span>
@@ -21,15 +22,19 @@
                   <RouterLink to="/" v-on:click="toggleMenuCheckbox()">{{ routeTexts.home[selectedLang] }}</RouterLink>
                 </li>
                 <li>
-                  <RouterLink to="/about" v-on:click="toggleMenuCheckbox()">{{ routeTexts.about[selectedLang] }}
-                  </RouterLink>
-                </li>
-                <li>
                   <RouterLink to="/articles" v-on:click="toggleMenuCheckbox()">{{
                     routeTexts.articles[selectedLang] }}</RouterLink>
                 </li>
                 <li>
-                  <RouterLink to="/contact" v-on:click="toggleMenuCheckbox()">{{ routeTexts.contact[selectedLang] }}
+                  <RouterLink to="/music" v-on:click="toggleMenuCheckbox()">{{
+                    routeTexts.music[selectedLang] }}</RouterLink>
+                </li>
+                <li>
+                  <RouterLink to="/gallery" v-on:click="toggleMenuCheckbox()">{{
+                    routeTexts.gallery[selectedLang] }}</RouterLink>
+                </li>
+                <li>
+                  <RouterLink to="/about" v-on:click="toggleMenuCheckbox()">{{ routeTexts.about[selectedLang] }}
                   </RouterLink>
                 </li>
                 <LanguageChooser class="mobile_language_chooser" />
@@ -46,7 +51,7 @@
 <script setup>
 import { languageStore } from '@/stores/language.js'
 import LanguageChooser from '@/components/LanguageChooser.vue';
-import { ref, watch } from 'vue';
+import { ref, watch, computed, onMounted, onUnmounted } from 'vue';
 import { routes } from '@/texts/routes';
 
 const store = languageStore()
@@ -58,6 +63,27 @@ watch(
     selectedLang.value = newLang;
   }
 );
+
+const windowWidth = ref(window.innerWidth);
+const navPadding = ref('1rem 0');
+const smallScreen = computed(() => windowWidth.value <= 990);
+
+watch(smallScreen, (newVal) => {
+  navPadding.value = newVal ? '0' : '1rem 0';
+});
+
+const updateWidth = () => {
+  windowWidth.value = window.innerWidth;
+};
+
+onMounted(() => {
+  window.addEventListener('resize', updateWidth);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateWidth);
+});
+
 </script>
 
 <script>
@@ -68,20 +94,11 @@ export default {
   },
   data() {
     return {
-      windowWidth: window.innerWidth,
       clicked: false,
       routeTexts: routes,
     }
   },
-  mounted() {
-    window.onresize = () => {
-      this.windowWidth = window.innerWidth
-    }
-  },
   methods: {
-    isSmallScreen() {
-      return this.windowWidth <= 990
-    },
     toggleMenuCheckbox() {
       this.clicked = false
     }
@@ -104,10 +121,10 @@ html,
 body {
   height: 100%;
   font-family: 'Poppins', sans-serif;
-  background-color: black;
   color: white;
   overflow: hidden;
-  background-image: url('/images/background-stars.png');
+  background: rgb(77,157,224);
+  background: linear-gradient(153deg, rgba(77,157,224,1) 10%, rgba(97,132,200,1) 55%, rgba(225,85,84,1) 89%);
 }
 
 /* Header Styling */
@@ -118,7 +135,7 @@ header {
   width: 100%;
   z-index: 10;
   background: rgba(0, 0, 0, 0.3);
-  padding: 1rem 0;
+  padding: v-bind('navPadding');
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -140,7 +157,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #66B95C;
+  color: #E1BC29;
 }
 
 /* Main Content */
@@ -157,7 +174,7 @@ router-view {
 
 router-view h1 {
   font-size: 2.5rem;
-  color: #66B95C;
+  color: #E1BC29;
 }
 
 router-view p {
@@ -259,7 +276,7 @@ router-view p {
   padding: 1em;
   box-sizing: border-box;
   overflow-y: auto;
-  background: black;
+  background: #173045;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;

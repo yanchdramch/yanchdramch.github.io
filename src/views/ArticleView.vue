@@ -1,13 +1,13 @@
 <template>
   <div class="about" v-if="article">
     <div class="main_title">
-      <div class="normal">{{ article.title }}</div>
+      <div class="normal" >{{ article.title }}</div>
       <div class="date">Published on: {{ article.date }}</div>
     </div>
     <div class="article_text">
-      <div v-if="article.text"> {{ article.text }} </div>
+      <div class="first_par" v-if="article.text" v-html=article.text></div>
       <div v-if="article.elements" v-for="element in article.elements">
-        <component :is="element.type" :propList="element.propList"></component>
+        <component :class="element.type" :is="element.type" :propList="element.propList"></component>
       </div>
     </div>
   </div>
@@ -117,8 +117,7 @@ export default {
   position: relative;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
+  width: 95%;
   box-sizing: content-box;
   align-content: flex-start;
   overflow-y: auto;
@@ -172,5 +171,21 @@ export default {
 .resume {
   padding-left: 1.5em;
   padding-right: 1em;
+}
+
+:deep(a) {
+  padding: 0;
+}
+
+.image {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
+.first_par {
+  margin-bottom: 1em;
 }
 </style>
