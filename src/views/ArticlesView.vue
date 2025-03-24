@@ -12,31 +12,27 @@
 </template>
 
 <script setup>
-import PublicationComponent from '@/components/PublicationComponent.vue';
+import { articleStore } from '@/stores/articles.js';
 import { languageStore } from '@/stores/language.js'
 import { ref, watch, onMounted } from 'vue';
 
-const store = languageStore()
+const store = languageStore();
 const selectedLang = ref(store.language);
 
-const articles = ref([]);
-
-onMounted(async () => {
-  const modules = import.meta.glob("@/articles/*.json");
-  const loadedArticles = [];
-
-  for (const path in modules) {
-    const module = await modules[path]();
-    loadedArticles.push({ ...module.default, path });
-  }
-
-  articles.value = loadedArticles;
-});
+const storeArticle = articleStore();
+const articles = ref(storeArticle.list)
 
 watch(
   () => store.language,
   (newLang) => {
     selectedLang.value = newLang;
+  }
+);
+
+watch(
+  () => storeArticle.list,
+  (newList) => {
+    articles.value = newList;
   }
 );
 </script>
@@ -106,7 +102,7 @@ export default {
 }
 
 .colored {
-  color: #E1BC29;
+  color: #FBC145;
   font-weight: 700;
   font-size: 2rem;
   flex-grow: 0;

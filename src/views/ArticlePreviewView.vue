@@ -114,7 +114,7 @@ export default {
 }
 
 .colored {
-  color: #E1BC29;
+  color: #FBC145;
   font-weight: 700;
   font-size: 2rem;
   flex-grow: 0;
@@ -140,7 +140,7 @@ textarea {
 
 .invalid {
   color: red;
-  background-color: #E1BC29;
+  background-color: #FBC145;
   text-align: center;
   font-weight: 600;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="about" v-if="article">
+  <div class="article" v-if="article">
     <div class="main_title">
       <div class="normal" >{{ article.title }}</div>
       <div class="date">Published on: {{ article.date }}</div>
@@ -25,6 +25,9 @@ const selectedLang = ref(store.language);
 const articleId = useRoute().params.id;
 const article = ref(null);
 const error = ref(null);
+
+const minHeight = ref(isPreview ? '' : '85vh');
+const maxHeight = ref(isPreview ? '' : '85vh');
 
 watchEffect(async () => {
   if (!isPreview){
@@ -75,7 +78,9 @@ export default {
   margin-bottom: 0.5em;
 }
 
-.about {
+.article {
+  min-height: v-bind('minHeight');
+  max-height: v-bind('maxHeight');
   display: flex;
   align-items: flex-start;
   padding-top: 1em;

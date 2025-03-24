@@ -53,7 +53,7 @@ export default {
           "colored": "Touch"
         },
         "bg": {
-          "normal": "Свържете се с ",
+          "normal": "Свържи се с ",
           "colored": "Мен"
         }
       }
@@ -99,7 +99,7 @@ export default {
 }
 
 .colored {
-  color: #E1BC29;
+  color: #FBC145;
   font-weight: 700;
   font-size: 2rem;
   flex-grow: 0;

@@ -52,13 +52,13 @@ export default {
   padding: 0.85rem 2.25rem;
   font-size: 1.1rem;
   font-weight: 500;
-  background-color: #E1BC29;
-  color: white;
+  background-color: #FBC145;
+  color: #fffdf6;
   border-width: 0px;
 }
 
 .contact_button:hover {
-  background-color: white;
+  background-color: #fffdf6;
   color: black;
 }
 
@@ -76,7 +76,7 @@ export default {
 }
 
 .colored_err {
-  color: #E1BC29;
+  color: #FBC145;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 3.5rem;

@@ -1,14 +1,14 @@
 <template>
     <div class="name">{{ myName[selectedLang].normal }}<div class="surname">{{ myName[selectedLang].colored }}</div>
     </div>
-    <!-- <div class="competencies">
+    <div class="competencies">
         <transition-group name="fade" tag="div">
             <div v-for="(competency, index) in competencies" :key="index" v-show="active_item === index"
                 :style="{ fontWeight: '600' }" class="competency">
                 {{ competency[selectedLang] }}
             </div>
         </transition-group>
-    </div> -->
+    </div>
 </template>
 
 <script setup>
@@ -46,14 +46,19 @@ export default {
             },
             competencies: [
                 {
-                    "en": "Drama",
-                    "de": "Drama",
-                    "bg": "Драма"
+                    "en": "Dramatic",
+                    "de": "Dramatisch",
+                    "bg": "Драматична"
                 },
                 {
-                    "en": "No Drama",
-                    "de": "No Drama",
-                    "bg": "Нема Драма"
+                    "en": "Pragmatic",
+                    "de": "Pragmatisch",
+                    "bg": "Прагматична"
+                },
+                {
+                    "en": "Never static",
+                    "de": "Nie statisch",
+                    "bg": "Никога статична"
                 }
             ]
         };
@@ -78,10 +83,11 @@ export default {
     align-content: center;
     flex-wrap: wrap;
     margin-bottom: -0.5rem;
+    padding-top: 2em;
 }
 
 .surname {
-    color: #E1BC29;
+    color: #FBC145;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 3.5rem;

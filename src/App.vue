@@ -9,7 +9,7 @@
             <RouterLink to="/articles">{{ routeTexts.articles[selectedLang] }}</RouterLink>
             <RouterLink to="/music">{{ routeTexts.music[selectedLang] }}</RouterLink>
             <RouterLink to="/gallery">{{ routeTexts.gallery[selectedLang] }}</RouterLink>
-            <RouterLink to="/about">{{ routeTexts.about[selectedLang] }}</RouterLink>
+            <!-- <RouterLink to="/about">{{ routeTexts.about[selectedLang] }}</RouterLink> -->
           </nav>
           <nav role="navigation" v-if="smallScreen">
             <div id="menuToggle">
@@ -33,10 +33,10 @@
                   <RouterLink to="/gallery" v-on:click="toggleMenuCheckbox()">{{
                     routeTexts.gallery[selectedLang] }}</RouterLink>
                 </li>
-                <li>
+                <!-- <li>
                   <RouterLink to="/about" v-on:click="toggleMenuCheckbox()">{{ routeTexts.about[selectedLang] }}
                   </RouterLink>
-                </li>
+                </li> -->
                 <LanguageChooser class="mobile_language_chooser" />
               </ul>
             </div>
@@ -50,6 +50,7 @@
 
 <script setup>
 import { languageStore } from '@/stores/language.js'
+import { articleStore } from '@/stores/articles.js';
 import LanguageChooser from '@/components/LanguageChooser.vue';
 import { ref, watch, computed, onMounted, onUnmounted } from 'vue';
 import { routes } from '@/texts/routes';
@@ -65,11 +66,24 @@ watch(
 );
 
 const windowWidth = ref(window.innerWidth);
-const navPadding = ref('1rem 0');
 const smallScreen = computed(() => windowWidth.value <= 990);
+const navPadding = ref(smallScreen.value ? '0' : '1rem 0');
 
 watch(smallScreen, (newVal) => {
   navPadding.value = newVal ? '0' : '1rem 0';
+});
+
+const storeArticles = articleStore();
+onMounted(async () => {
+  const modules = import.meta.glob("@/articles/*.json");
+  const loadedArticles = [];
+
+  for (const path in modules) {
+    const module = await modules[path]();
+    loadedArticles.push({ ...module.default, path });
+  }
+
+  storeArticles.list = loadedArticles;
 });
 
 const updateWidth = () => {
@@ -107,7 +121,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* General Reset */
 * {
@@ -120,11 +134,11 @@ export default {
 html,
 body {
   height: 100%;
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  overflow: hidden;
-  background: rgb(77,157,224);
-  background: linear-gradient(153deg, rgba(77,157,224,1) 10%, rgba(97,132,200,1) 55%, rgba(225,85,84,1) 89%);
+  font-family: "Noto Sans", sans-serif;
+  color: #fffdf6;
+  overflow: visible;
+  scrollbar-width: none;
+  background: #2f2061;
 }
 
 /* Header Styling */
@@ -134,7 +148,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.3);
+  background: #2f2061;
   padding: v-bind('navPadding');
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -148,7 +162,7 @@ header .wrapper {
 }
 
 header nav a {
-  color: white;
+  color: #fffdf6;
   text-decoration: none;
   margin: 0 1.5rem;
   font-size: 1.1rem;
@@ -157,7 +171,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #E1BC29;
+  color: #FBC145;
 }
 
 /* Main Content */
@@ -174,13 +188,13 @@ router-view {
 
 router-view h1 {
   font-size: 2.5rem;
-  color: #E1BC29;
+  color: #FBC145;
 }
 
 router-view p {
   font-size: 1.2rem;
   margin-top: 1rem;
-  color: white;
+  color: #fffdf6;
   max-width: 600px;
   line-height: 1.5;
 }
@@ -228,6 +242,7 @@ router-view p {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
     opacity 0.55s ease;
+  border: 0.1em solid #2f2061;
 }
 
 #menuToggle span:first-child {
@@ -276,7 +291,7 @@ router-view p {
   padding: 1em;
   box-sizing: border-box;
   overflow-y: auto;
-  background: #173045;
+  background: black;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;

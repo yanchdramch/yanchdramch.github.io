@@ -56,14 +56,14 @@ export default {
 }
 
 .language:hover {
-  color: #E1BC29;
+  color: #FBC145;
 }
 
 .chosen {
-  color: #E1BC29;
+  color: #FBC145;
 }
 
 .language+.language {
-  border-left: 0.09em solid white;
+  border-left: 0.09em solid #fffdf6;
 }
 </style>

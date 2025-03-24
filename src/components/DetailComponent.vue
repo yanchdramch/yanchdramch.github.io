@@ -1,6 +1,6 @@
 <template>
     <div class="detail_icon">
-        <FontAwesomeIcon :icon="[detailSet, detailIcon]" size="xl" :style="{ color: '#E1BC29' }" />
+        <FontAwesomeIcon :icon="[detailSet, detailIcon]" size="xl" :style="{ color: '#FBC145' }" />
     </div>
 </template>
 

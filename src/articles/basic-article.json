@@ -1,5 +1,7 @@
 {
     "id": "basic-article",
+    "type": "article",
+    "length": 2,
     "title": "Basic Article",
     "description": "This is a simple article.",
     "date": "18.03.2024",

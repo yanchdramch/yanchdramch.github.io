@@ -8,15 +8,17 @@
     </div>
     <div class="details">
       <div class="col leftcol">
-        <img src="/images/yana_profile.jpg" alt="profile picture" class="picture">
+        <div class="pic_container">
+          <img src="/images/About.jpeg" alt="profile picture" class="picture">
+          <div class="circle"></div>
+        </div>
+        
       </div>
       <div class="col rightcol">
         <div class="compentences_wrapper">
           <CompetenceComponent />
         </div>
-        <div class="resume">
-          {{ aboutTexts.resume[selectedLang] }}
-        </div>
+        <div class="resume" v-html="aboutTexts.resume[selectedLang]"></div>
         <div class="icons">
           <DetailComponent icon="youtube" set="fab" />
           <DetailComponent icon="envelope" set="fas" link="mailto:yanamail@mail.com" />
@@ -72,24 +74,46 @@ export default {
 </script>
 
 <style scoped>
+.pic_container {
+  position:relative;
+  width: 80%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .picture {
-  border-radius: 2em;
-  width: 95%;
-  margin-bottom: 0.5em;
-  margin-top: 1.25em;
+  position: relative;
+  width: 85%;
+  clip-path: circle();
+  z-index: 5;
+}
+
+.circle {
+  position: absolute;
+  background: white;
+  width: 90%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  clip-path: circle();
+  z-index: 1;
+  align-self: anchor-center;
+  justify-self: anchor-center;
 }
 
 .about {
-  min-height: 85vh;
   display: flex;
   align-items: flex-start;
   padding-top: 1em;
   width: 90vw;
   flex-direction: column;
-  max-height: 85vh;
+  min-height: 75vh;
   box-sizing: border-box;
   margin-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 15vh;
+  place-self: anchor-center;
 }
 
 .main_title {
@@ -116,7 +140,7 @@ export default {
 }
 
 .colored {
-  color: #E1BC29;
+  color: #FBC145;
   font-weight: 700;
   font-size: 2rem;
   flex-grow: 0;
@@ -136,6 +160,8 @@ export default {
   overflow-x: hidden;
   scrollbar-width: thin;
   justify-content: space-evenly;
+  padding-bottom: 2rem;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
 }
 
 .col {
@@ -149,6 +175,7 @@ export default {
 .leftcol {
   width: 30%;
   flex-direction: row;
+  justify-content: center;
 }
 
 .rightcol {
@@ -186,6 +213,7 @@ export default {
   padding-left: 1.5em;
   padding-right: 1em;
   margin-bottom: 1em;
+  font-size: 1.1em;
 }
 
 .icons {
@@ -196,5 +224,9 @@ export default {
   flex-wrap: wrap;
   align-content: flex-start;
   align-items: center;
+}
+
+a {
+  padding: 0;
 }
 </style>

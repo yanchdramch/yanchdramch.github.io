@@ -1,7 +1,6 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
   margin: 0 auto;
   font-weight: normal;
   display: flex;
@@ -11,15 +10,14 @@
 a,
 .green {
   text-decoration: none;
-  color: white;
+  color: #fffdf6;
   transition: 0.4s;
-  padding: 3px;
 }
 
 a:hover {
-  color: #E1BC29;
+  color: #FBC145;
 }
 
 .router-link-active {
-  color: #E1BC29;
+  color: #FBC145;
 }
