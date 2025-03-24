@@ -142,7 +142,6 @@ export default {
 
 .articles_title {
   margin-bottom: 3em;
-  padding-top: 2em;
   justify-self: center;
 }
 
@@ -173,6 +172,7 @@ export default {
   transform: translateY(-5px);
   box-shadow: 6px 6px 15px #2f206145;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .card_image {
