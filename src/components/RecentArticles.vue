@@ -15,6 +15,7 @@
 
 
 <script setup lang="ts">
+import { articleStore } from '@/stores/articles.js';
 import { languageStore } from '@/stores/language.js'
 import { ref, watch } from 'vue';
 
@@ -25,6 +26,21 @@ watch(
   () => store.language,
   (newLang) => {
     selectedLang.value = newLang;
+  }
+);
+
+const storeArticle = articleStore();
+const articles = ref(storeArticle.list)
+const newestArticles = ref(articles.value.sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime()));
+
+watch(
+  () => storeArticle.list,
+  (newList) => {
+    newList.forEach(element => {
+      console.log(Date.parse(element.date))
+    });
+    articles.value = newList;
+    newestArticles.value = articles.value.sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   }
 );
 </script>

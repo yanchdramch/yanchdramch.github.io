@@ -20,12 +20,16 @@
         </div>
         <div class="resume" v-html="aboutTexts.resume[selectedLang]"></div>
         <div class="icons">
-          <DetailComponent icon="youtube" set="fab" />
-          <DetailComponent icon="envelope" set="fas" link="mailto:yanamail@mail.com" />
-          <DetailComponent icon="square-pinterest" set="fab" />
-          <DetailComponent icon="linkedin" set="fab" />
-          <DetailComponent icon="square-facebook" set="fab" />
-          <DetailComponent icon="square-instagram" set="fab" />
+          <div class="left_icons">
+            <DetailComponent icon="youtube" set="fab" />
+            <DetailComponent icon="envelope" set="fas" link="mailto:yanamail@mail.com" />
+            <DetailComponent icon="square-pinterest" set="fab" />
+          </div>
+          <div class="right_icons">
+            <DetailComponent icon="linkedin" set="fab" />
+            <DetailComponent icon="square-facebook" set="fab" />
+            <DetailComponent icon="square-instagram" set="fab" />
+          </div>
         </div>
       </div>
     </div>
@@ -224,6 +228,16 @@ export default {
   flex-wrap: wrap;
   align-content: flex-start;
   align-items: center;
+}
+
+.left_icons{
+  display: flex;
+  flex-direction: row;
+}
+
+.right_icons{
+  display: flex;
+  flex-direction: row;
 }
 
 a {

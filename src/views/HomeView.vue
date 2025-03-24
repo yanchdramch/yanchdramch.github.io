@@ -19,6 +19,7 @@ import ThePit from '@/components/ThePit.vue';
 import AboutView from './AboutView.vue';
 import RecentArticles from '@/components/RecentArticles.vue';
 import { languageStore } from '@/stores/language.js'
+import { articleStore } from '@/stores/articles.js';
 import { ref, watch } from 'vue';
 
 

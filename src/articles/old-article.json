@@ -1,0 +1,11 @@
+{
+    "id": "old-article",
+    "type": "article",
+    "length": 1,
+    "title": "Basic Article",
+    "description": "This is a simple article.",
+    "date": "1994-03-18",
+    "thumbnail": "/images/perls-duo.png",
+    "text": "I am a very old article"
+}
+   
