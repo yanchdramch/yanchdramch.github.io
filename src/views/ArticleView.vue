@@ -1,6 +1,6 @@
 <template>
   <div class="article" v-if="article">
-    <div class="main_title">
+    <div class="article_title">
       <div class="normal" >{{ article.title }}</div>
       <div class="date">Published on: {{ article.date }}</div>
     </div>
@@ -91,7 +91,7 @@ export default {
   padding-bottom: 0;
 }
 
-.main_title {
+.article_title {
   width: 100%;
   height: auto;
   clear: both;

@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <div class="main_title">
+    <div class="about_title">
       <div class="normal">{{ pageTitle[selectedLang].normal }}<div class="colored">
           {{ pageTitle[selectedLang].colored }}
         </div>
@@ -120,7 +120,7 @@ export default {
   place-self: anchor-center;
 }
 
-.main_title {
+.about_title {
   width: 100%;
   height: auto;
   clear: both;

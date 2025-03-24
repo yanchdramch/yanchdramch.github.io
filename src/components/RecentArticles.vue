@@ -1,13 +1,22 @@
 <template>
     <div class="recent_wrapper">
         <div class="recent_content">
-            <div class="main_title">
+            <div class="articles_title">
                 <div class="normal">{{ pageTitle[selectedLang].normal }}</div>
             </div>
             <div class="recent_articles">
-              <div class="article_card"> </div>
-              <div class="article_card"> </div>
-              <div class="article_card"> </div>
+              <div class="article_card" v-for="article in newestArticles" @click="navigateToArticle(article.id)">
+                <img class="card_image" :src="article.thumbnail"></img>
+                <div class="card_type">{{ article.type }}</div>
+                <div class="card_title">{{ article.title }}</div>
+                <div>
+                  <div class="card_date">{{ getDateForLocale(article.date, selectedLang) }}</div>
+                  <div class="card_time">
+                    <FontAwesomeIcon class="clock_icon" :icon="['far', 'clock']" size="lg" :style="{ color: '#2f2061' }" />
+                    {{ article.length }} MIN READ
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
     </div>
@@ -15,6 +24,7 @@
 
 
 <script setup lang="ts">
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { articleStore } from '@/stores/articles.js';
 import { languageStore } from '@/stores/language.js'
 import { ref, watch } from 'vue';
@@ -31,18 +41,31 @@ watch(
 
 const storeArticle = articleStore();
 const articles = ref(storeArticle.list)
-const newestArticles = ref(articles.value.sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime()));
+const newestArticles = ref(articles.value.sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0,3));
 
 watch(
   () => storeArticle.list,
   (newList) => {
-    newList.forEach(element => {
-      console.log(Date.parse(element.date))
-    });
     articles.value = newList;
-    newestArticles.value = articles.value.sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    newestArticles.value = articles.value.sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0,3);
   }
 );
+
+const getDateForLocale = (date:Date, language:string) => {
+  const localeLangIdMap = {
+    "en": "en-GB",
+    "bg": "bg-BG",
+    "de": "de-DE"
+  }
+  const options: Intl.DateTimeFormatOptions = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+
+  return new Date(date).toLocaleDateString(localeLangIdMap[language], options);
+}
 </script>
 
 <script lang="ts">
@@ -64,6 +87,11 @@ export default {
         }
       }
     };
+  },
+  methods: {
+    navigateToArticle(id) {
+      this.$router.push(`article/${id}`)
+    }
   },
 };
 </script>
@@ -104,7 +132,7 @@ export default {
   flex-basis: max-content;
 }
 
-.main_title {
+.articles_title {
   margin-bottom: 3em;
   padding-top: 2em;
   justify-self: center;
@@ -124,7 +152,77 @@ export default {
   background-color: #fffdf6;
   width: 300px;
   height: 400px;
-  border: 1px solid #2f2061;
+  box-shadow: 4px 4px 10px #2f206130;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  color:#2f2061;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 6px 6px 15px #2f206145;
+  transition: 0.3s ease-in-out;
+}
+
+.card_image {
+  height: 45%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card_type {
+  background-color: #2f2061;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.card_title {
+  min-height: 60px;
+  display: flex;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 15px;
+  color: #222;
+  align-items: flex-start; 
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.card_date {
+  font-size: 16px;
+  color: gray;
+  text-align: center;
+}
+
+.card_date:first-letter {
+  text-transform: uppercase;
+}
+
+.card_time {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+  display: flex;
+  align-items: anchor-center;
+  justify-content: center;
+  gap: 10px;
+  color: #333;
+}
+
+.clock_icon {
+  font-weight: bold;
+  padding-top: 2px;
 }
 
 </style>

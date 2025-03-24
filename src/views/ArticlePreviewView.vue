@@ -1,6 +1,6 @@
 <template>
   <div class="publications_page">
-    <div class="main_title">
+    <div class="preview_title">
       <div class="normal">{{ pageTitle[selectedLang].normal }}<div class="colored">{{ pageTitle[selectedLang].colored }}
         </div>
       </div>
@@ -90,7 +90,7 @@ export default {
   scrollbar-width: thin;
 }
 
-.main_title {
+.preview_title {
   width: 100%;
   height: auto;
   clear: both;

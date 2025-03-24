@@ -1,6 +1,6 @@
 <template>
   <div class="contacts">
-    <div class="main_title">
+    <div class="contact_title">
       <div class="normal">{{ pageTitle[selectedLang].normal }}<div class="colored">{{ pageTitle[selectedLang].colored
           }}</div>
       </div>
@@ -75,7 +75,7 @@ export default {
   margin-top: 0;
 }
 
-.main_title {
+.contact_title {
   width: 100%;
   height: auto;
   clear: both;

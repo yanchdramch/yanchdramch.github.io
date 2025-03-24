@@ -30,9 +30,14 @@ const router = createRouter({
       component: () => import('../views/ArticleView.vue'),
     },
     {
-      path: '/preview/',
+      path: '/preview',
       name: 'preview',
       component: () => import('../views/ArticlePreviewView.vue'),
+    },
+    {
+      path: '/music',
+      name: 'music',
+      component: () => import('../views/MusicView.vue'),
     },
     {
       path: '/:catchAll(.*)*',

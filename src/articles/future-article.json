@@ -1,0 +1,11 @@
+{
+    "id": "future-article",
+    "type": "article",
+    "length": 10,
+    "title": "Future Article",
+    "description": "This is a simple article from the future.",
+    "date": "2026-12-22",
+    "thumbnail": "https://www.baloise.com/.imaging/focalpoint/16-9/800/dam/jcr:3b7c0660-1321-4379-94d9-996e8f72b02f/Future_City_title.jpg%20768w",
+    "text": "I am an article from the future"
+}
+   

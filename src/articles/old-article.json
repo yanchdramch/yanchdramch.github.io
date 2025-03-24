@@ -2,10 +2,10 @@
     "id": "old-article",
     "type": "article",
     "length": 1,
-    "title": "Basic Article",
+    "title": "Oldest Article",
     "description": "This is a simple article.",
     "date": "1994-03-18",
-    "thumbnail": "/images/perls-duo.png",
+    "thumbnail": "https://www.befunky.com/images/prismic/fdc9b868-8b68-43b0-bd75-f8cbf0afaf9e_old-photo-scratch-reduction-before.jpg",
     "text": "I am a very old article"
 }
    

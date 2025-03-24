@@ -8,7 +8,7 @@
     </div>
     <ThePit></ThePit>
     <RecentArticles></RecentArticles>
-    <div class="about_wrapper">
+    <div class="about_wrapper" ref="aboutRef">
       <AboutView></AboutView>
     </div>
   </main>
@@ -19,12 +19,11 @@ import ThePit from '@/components/ThePit.vue';
 import AboutView from './AboutView.vue';
 import RecentArticles from '@/components/RecentArticles.vue';
 import { languageStore } from '@/stores/language.js'
-import { articleStore } from '@/stores/articles.js';
 import { ref, watch } from 'vue';
 
-
+const aboutRef = ref([])
 function myScroll() {
-  window.scrollTo({left: 0, top:document.body.scrollHeight || document.documentElement.scrollHeight, behavior: "smooth"});
+  window.scrollTo({left: 0, top:aboutRef.value.getBoundingClientRect().top, behavior: "smooth"});
 }
 
 defineExpose({ myScroll });

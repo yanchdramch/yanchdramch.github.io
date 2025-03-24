@@ -1,7 +1,7 @@
 <template>
     <div class="pit_wrapper">
         <div class="pit_content">
-            <div class="main_title">
+            <div class="pit_title">
                 <div class="normal">{{ pageTitle[selectedLang].normal }}</div>
             </div>
             <div class="the_pit">
@@ -87,7 +87,7 @@ export default {
 }
 
 .pit_content {
-  width: 90vw;
+  width: 100vw;
 }
 
 .normal {
@@ -113,7 +113,7 @@ export default {
   flex-basis: max-content;
 }
 
-.main_title {
+.pit_title {
   margin-bottom: 3em;
   padding-top: 2em;
   justify-self: center;

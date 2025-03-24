@@ -5,10 +5,10 @@
     "title": "Article with Components",
     "description": "This is a more complicated article.",
     "date": "2025-03-18",
-    "thumbnail": "/images/ld-measures.png",
+    "thumbnail": "https://st.depositphotos.com/2001755/3622/i/450/depositphotos_36220949-stock-photo-beautiful-landscape.jpg",
     "text": "<a href='https://google.com' target='_blank'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</a>. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "elements": [
-        { "type": "photo", "propList": { "src": "/images/About.jpeg", "alt": "Some text to show if image does not load", "width": "350px" }},
+        { "type": "photo", "propList": { "src": "https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg", "alt": "Some text to show if image does not load", "width": "550px" }},
         { "type": "paragraph", "propList": { "text": "<em>There are many variations of passages of Lorem Ipsum available<em>, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc." }}
     ]
 }
