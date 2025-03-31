@@ -5,6 +5,8 @@
   font-weight: normal;
   display: flex;
   place-items: center;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 a,

@@ -133,7 +133,7 @@ export default {
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
   font-family: "Noto Sans", sans-serif;
   color: #fffdf6;
   overflow: visible;

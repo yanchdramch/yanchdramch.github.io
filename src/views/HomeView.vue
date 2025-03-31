@@ -11,6 +11,7 @@
     <div class="about_wrapper" ref="aboutRef">
       <AboutView></AboutView>
     </div>
+    <CustomFooter></CustomFooter>
   </main>
 </template>
 
@@ -18,12 +19,13 @@
 import ThePit from '@/components/ThePit.vue';
 import AboutView from './AboutView.vue';
 import RecentArticles from '@/components/RecentArticles.vue';
+import CustomFooter from '@/components/CustomFooter.vue';
 import { languageStore } from '@/stores/language.js'
 import { ref, watch } from 'vue';
 
 const aboutRef = ref([])
 function myScroll() {
-  window.scrollTo({left: 0, top:aboutRef.value.getBoundingClientRect().top, behavior: "smooth"});
+  window.scrollTo({left: 0, top: aboutRef.value.getBoundingClientRect().top + 100, behavior: "smooth"});
 }
 
 defineExpose({ myScroll });

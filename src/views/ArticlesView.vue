@@ -1,28 +1,32 @@
 <template>
   <div class="publications_page">
-    <div class="articles_title">
-      <div class="normal">{{ pageTitle[selectedLang].normal }}<div class="colored">{{ pageTitle[selectedLang].colored }}
+    <div>
+      <div class="articles_title">
+        <div class="normal">{{ pageTitle[selectedLang].normal }}<div class="colored">{{ pageTitle[selectedLang].colored }}
+          </div>
         </div>
       </div>
-    </div>
-    <div class="publications">
-      <div class="article_card" v-for="article in sortedArticles" @click="navigateToArticle(article.id)">
-        <img class="card_image" :src="article.thumbnail"></img>
-        <div class="card_type">{{ article.type }}</div>
-        <div class="card_title">{{ article.title }}</div>
-        <div>
-          <div class="card_date">{{ getDateForLocale(article.date, selectedLang) }}</div>
-          <div class="card_time">
-            <FontAwesomeIcon class="clock_icon" :icon="['far', 'clock']" size="lg" :style="{ color: '#2f2061' }" />
-            {{ article.length }} MIN READ
+      <div class="publications">
+        <div class="article_card" v-for="article in sortedArticles" @click="navigateToArticle(article.id)">
+          <img class="card_image" :src="article.thumbnail"></img>
+          <div class="card_type">{{ article.type }}</div>
+          <div class="card_title">{{ article.title }}</div>
+          <div>
+            <div class="card_date">{{ getDateForLocale(article.date, selectedLang) }}</div>
+            <div class="card_time">
+              <FontAwesomeIcon class="clock_icon" :icon="['far', 'clock']" size="lg" :style="{ color: '#2f2061' }" />
+              {{ article.length }} MIN READ
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- <CustomFooter></CustomFooter> -->
   </div>
 </template>
 
 <script setup>
+import CustomFooter from '@/components/CustomFooter.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { articleStore } from '@/stores/articles.js';
 import { languageStore } from '@/stores/language.js'
@@ -106,6 +110,7 @@ export default {
   max-height: 85vh;
   box-sizing: border-box;
   margin-top: 0;
+  justify-content: space-between;
 }
 
 .articles_title {

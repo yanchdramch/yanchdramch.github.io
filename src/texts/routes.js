@@ -1,8 +1,8 @@
 export const routes = {
   "home": {
-    "de" : "Startseite",
-    "en" : "Home",
-    "bg" : "Начало"
+    "de" : "Kern",
+    "en" : "Pit",
+    "bg" : "Яма"
   },
   "articles": {
     "de" : "Lies",
@@ -15,7 +15,7 @@ export const routes = {
     "bg" : "Чуй"
   },
   "gallery": {
-    "de" : "Siehe",
+    "de" : "Sieh",
     "en" : "See",
     "bg" : "Виж"
   },

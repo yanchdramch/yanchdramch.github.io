@@ -1,23 +1,27 @@
 <template>
   <div class="music_page">
-    <div class="music_title">
-      <div class="normal">{{ pageTitle[selectedLang].normal }}<div class="colored">{{ pageTitle[selectedLang].colored }}
+    <div>
+      <div class="music_title">
+        <div class="normal">{{ pageTitle[selectedLang].normal }}<div class="colored">{{ pageTitle[selectedLang].colored }}
+          </div>
+        </div>
+      </div>
+      <div class="music">
+        <div class="music_project">
+          <div class="normal">Elfinator</div>
+          <div class="vid_gallery">
+            <iframe src="https://www.youtube.com/embed/_yhv03vtlX0?si=rrN_FILJML2TEAYF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/AdlbH9Ug0io?si=E5u8qrkNpeSCGg1L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
-    <div class="music">
-      <div class="music_project">
-        <div class="normal">Elfinator</div>
-        <div class="vid_gallery">
-          <iframe src="https://www.youtube.com/embed/_yhv03vtlX0?si=rrN_FILJML2TEAYF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <iframe src="https://www.youtube.com/embed/AdlbH9Ug0io?si=E5u8qrkNpeSCGg1L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
+    <!-- <CustomFooter></CustomFooter> -->
   </div>
 </template>
 
 <script setup>
+import CustomFooter from '@/components/CustomFooter.vue';
 import { languageStore } from '@/stores/language.js'
 import { ref, watch, onMounted } from 'vue';
 
@@ -66,6 +70,7 @@ export default {
   max-height: 85vh;
   box-sizing: border-box;
   margin-top: 0;
+  justify-content: space-between;
 }
 
 .music_title {

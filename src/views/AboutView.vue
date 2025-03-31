@@ -10,6 +10,12 @@
       <div class="col leftcol">
         <div class="pic_container">
           <img src="/images/About.jpeg" alt="profile picture" class="picture">
+          <div 
+            class="overlay" @click="visitLink('https://www.instagram.com/mari_photo_s')" @mouseover="credit = true" @mouseleave="credit = false">
+            <Transition>
+              <div class="credit_text" v-if="credit">Photo by @mari_photo_s</div>
+            </Transition>
+          </div>
           <div class="circle"></div>
         </div>
         
@@ -21,14 +27,14 @@
         <div class="resume" v-html="aboutTexts.resume[selectedLang]"></div>
         <div class="icons">
           <div class="left_icons">
-            <DetailComponent icon="youtube" set="fab" />
-            <DetailComponent icon="envelope" set="fas" link="mailto:yanamail@mail.com" />
-            <DetailComponent icon="square-pinterest" set="fab" />
+            <DetailComponent icon="youtube" set="fab" link="https://www.youtube.com/@yana.dramova"/>
+            <DetailComponent icon="envelope" set="fas" link="textToCopy" copy/>
+            <DetailComponent icon="square-pinterest" set="fab" link="https://www.pinterest.com/yanchdramch/"/>
           </div>
           <div class="right_icons">
-            <DetailComponent icon="linkedin" set="fab" />
-            <DetailComponent icon="square-facebook" set="fab" />
-            <DetailComponent icon="square-instagram" set="fab" />
+            <DetailComponent icon="linkedin" set="fab" link="https://www.linkedin.com/in/yana-dramova-86355a293"/>
+            <DetailComponent icon="square-facebook" set="fab" link="https://www.facebook.com/share/1561LLKr16/"/>
+            <DetailComponent icon="square-instagram" set="fab" link="https://www.instagram.com/galway_girl_04/"/>
           </div>
         </div>
       </div>
@@ -51,6 +57,10 @@ watch(
     selectedLang.value = newLang;
   }
 );
+
+const visitLink = (link:string) => {
+  window.open(link, "blank")
+}
 </script>
 
 <script lang="ts">
@@ -71,7 +81,8 @@ export default {
           "normal": "За ",
           "colored": "Мен"
         }
-      }
+      },
+      credit: false,
     };
   },
 };
@@ -105,6 +116,26 @@ export default {
   z-index: 1;
   align-self: anchor-center;
   justify-self: anchor-center;
+}
+
+.overlay {
+  position: absolute;
+  background-color: #00000000;
+  width: 90%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  clip-path: circle();
+  z-index: 6;
+  align-self: anchor-center;
+  justify-self: anchor-center;
+  transition: background-color 350ms ease-in;
+}
+
+.overlay:hover {
+  background-color: #FBC14520;
+  cursor: pointer;
+  transition: background-color 250ms linear;
 }
 
 .about {
@@ -242,5 +273,23 @@ export default {
 
 a {
   padding: 0;
+}
+
+.credit_text {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.v-enter-active {
+  transition: opacity 450ms ease-in-out;
+}
+
+.v-leave-active {
+  transition: opacity 250ms ease-in-out;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 </style>
