@@ -106,7 +106,7 @@ export default {
 }
 
 .recent_content {
-  width: 90vw;
+  width: 100%;
 }
 
 .normal {
@@ -215,6 +215,7 @@ export default {
   padding: 10px 0;
   border-top: 1px solid #eee;
   display: flex;
+  align-items: center;
   align-items: anchor-center;
   justify-content: center;
   gap: 10px;

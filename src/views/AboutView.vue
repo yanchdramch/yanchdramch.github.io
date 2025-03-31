@@ -110,12 +110,8 @@ export default {
   background: white;
   width: 90%;
   height: 90%;
-  top: 0;
-  left: 0;
   clip-path: circle();
   z-index: 1;
-  align-self: anchor-center;
-  justify-self: anchor-center;
 }
 
 .overlay {
@@ -123,12 +119,8 @@ export default {
   background-color: #00000000;
   width: 90%;
   height: 90%;
-  top: 0;
-  left: 0;
   clip-path: circle();
   z-index: 6;
-  align-self: anchor-center;
-  justify-self: anchor-center;
   transition: background-color 350ms ease-in;
 }
 
@@ -142,13 +134,11 @@ export default {
   display: flex;
   align-items: flex-start;
   padding-top: 1em;
-  width: 90vw;
   flex-direction: column;
   min-height: 75vh;
   box-sizing: border-box;
   margin-top: 0;
   padding-bottom: 15vh;
-  place-self: anchor-center;
 }
 
 .about_title {
@@ -159,6 +149,7 @@ export default {
   border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
   padding-bottom: 2rem;
   margin-bottom: 0.5rem;
+  padding-left: 4em;
 }
 
 .normal {

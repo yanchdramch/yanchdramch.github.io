@@ -126,8 +126,6 @@ export default {
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-evenly;
-  width: 90%;
-  place-self: anchor-center;
   padding-bottom: 1em;
   font-size: 1.25em;
 }
