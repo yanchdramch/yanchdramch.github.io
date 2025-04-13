@@ -7,12 +7,12 @@
             <div class="recent_articles">
               <div class="article_card" v-for="article in newestArticles" @click="navigateToArticle(article.id)">
                 <img class="card_image" :src="article.thumbnail"></img>
-                <div class="card_type">{{ article.type }}</div>
-                <div class="card_title">{{ article.title }}</div>
+                <div class="card_type">{{ article.type[selectedLang] }}</div>
+                <div class="card_title">{{ article.title[selectedLang] }}</div>
                 <div>
                   <div class="card_date">{{ getDateForLocale(article.date, selectedLang) }}</div>
                   <div class="card_time">
-                    <FontAwesomeIcon class="clock_icon" :icon="['far', 'clock']" size="lg" :style="{ color: '#2f2061' }" />
+                    <FontAwesomeIcon class="clock_icon" :icon="['far', 'clock']" size="lg" :style="{ color: '#2c1338' }" />
                     {{ article.length }} MIN READ
                   </div>
                 </div>
@@ -99,7 +99,7 @@ export default {
 <style scoped>
 .recent_wrapper {
   width: 100vw;
-  background-color: #FBC145;
+  background-color: #00a39e;
   justify-items: center;
   align-content: start;
   padding-bottom: 6em;
@@ -119,12 +119,12 @@ export default {
   flex-wrap: wrap;
   margin-bottom: -1rem;
   scroll-padding-top: 2.5rem;
-  color: #2f2061;
+  color: #2c1338;
   justify-content: center;
 }
 
 .colored {
-  color: #2f2061;
+  color: #2c1338;
   font-weight: 700;
   font-size: 2rem;
   flex-grow: 0;
@@ -136,6 +136,7 @@ export default {
   margin-bottom: 3em;
   padding-top: 2em;
   justify-self: center;
+  font-family: "Playfair Display", serif;
 }
 
 .recent_articles {
@@ -152,9 +153,9 @@ export default {
   background-color: #fffdf6;
   width: 300px;
   height: 400px;
-  box-shadow: 4px 4px 10px #2f206130;
+  box-shadow: 4px 4px 10px #2c133830;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  color:#2f2061;
+  color:#2c1338;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -162,7 +163,7 @@ export default {
 
 .article_card:hover {
   transform: translateY(-5px);
-  box-shadow: 6px 6px 15px #2f206145;
+  box-shadow: 6px 6px 15px #2c133845;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -174,7 +175,7 @@ export default {
 }
 
 .card_type {
-  background-color: #2f2061;
+  background-color: #2c1338;
   color: white;
   font-size: 12px;
   font-weight: bold;

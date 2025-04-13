@@ -1,0 +1,35 @@
+{
+    "id": "darsy",
+    "type": {
+        "en": "article",
+        "de": "artikel",
+        "bg": "статия"
+    },
+    "length": 2,
+    "title": {
+        "en": "DARSYs Emotional Cocktail - Underground Echoes",
+        "de": "DARSYs Emotional Cocktail - Underground Echoes DE",
+        "bg": "DARSYs Emotional Cocktail - Underground Echoes BG"
+    },
+    "date": "2025-04-13",
+    "thumbnail": "https://www.lifehabitats.com/upload/_custom/files/organisms/96/103_sraka.jpg",
+    "text": {
+        "en": "svrakata tiktaka<br>bbbkkklklklkl",
+        "de": "de svrakata tiktaka<br>bbbkkklklklkl",
+        "bg": "bg svrakata tiktaka<br>bbbkkklklklkl"
+    },
+    "elements": [
+        { "type": "photo", "propList": { "src": "/images/darsy/darsy1.jpg", "alt": "Some text to show if image does not load", "width": "550px" }},
+        { 
+            "type": "paragraph",
+            "propList": { 
+                "text": {
+                    "en": "",
+                    "de": "",
+                    "bg": "<em>Чувам далечно ехо &mdash; сякаш мелодия, заровена дълбоко в земята, която не търси изход, а се извисява и цъфти отвътре. Потапям се в ехтящите вълни, следвам звука като компас през мъглата &mdash; и се озовавам в пространство, осветено от мистична лилава светлина. Там я виждам &mdash; сирената, примамила ме с гласа си. Затворена в стъклена капсула, която се пропуква от неземните честоти на песента ѝ."
+                }
+            }
+        }
+    ]
+}
+  

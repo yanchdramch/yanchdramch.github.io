@@ -101,7 +101,7 @@ export default {
 }
 
 .colored {
-  color: #FBC145;
+  color: #00a39e;
   font-weight: 700;
   font-size: 2rem;
   flex-grow: 0;

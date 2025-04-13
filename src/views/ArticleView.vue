@@ -1,11 +1,11 @@
 <template>
   <div class="article" v-if="article">
     <div class="article_title">
-      <div class="normal" >{{ article.title }}</div>
+      <div class="normal" >{{ article.title[selectedLang] }}</div>
       <div class="date">Published on: {{ article.date }}</div>
     </div>
     <div class="article_text">
-      <div class="first_par" v-if="article.text" v-html=article.text></div>
+      <div class="first_par" v-if="article.text[selectedLang]" v-html=article.text[selectedLang]></div>
       <div v-if="article.elements" v-for="element in article.elements">
         <component :class="element.type" :is="element.type" :propList="element.propList"></component>
       </div>

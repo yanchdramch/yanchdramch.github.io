@@ -56,11 +56,11 @@ export default {
 }
 
 .language:hover {
-  color: #FBC145;
+  color: #00a39e;
 }
 
 .chosen {
-  color: #FBC145;
+  color: #00a39e;
 }
 
 .language+.language {

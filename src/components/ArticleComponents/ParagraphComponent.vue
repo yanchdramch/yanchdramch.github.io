@@ -1,9 +1,20 @@
 <template>
-    <div class="paragraph_wrapper" v-html="text"></div>
+    <div class="paragraph_wrapper" v-html="text[selectedLang]"></div>
 </template>
 
 
 <script setup lang="ts">
+import { languageStore } from '@/stores/language.js'
+import { ref, watch } from 'vue';
+const store = languageStore()
+const selectedLang = ref(store.language);
+
+watch(
+  () => store.language,
+  (newLang) => {
+    selectedLang.value = newLang;
+  }
+);
 </script>
 
 <script lang="ts">

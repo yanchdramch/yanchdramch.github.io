@@ -76,14 +76,14 @@ export default {
   padding: 0.85rem 2.25rem;
   font-size: 1.1rem;
   font-weight: 400;
-  background-color: #FBC145;
+  background-color: #00a39e;
   color: #fffdf6;
   border-width: 0px;
 }
 
 .contact_button:hover {
   background-color: #fffdf6;
-  color: #2F2061;
+  color: #2c1338;
 }
 
 .home_wrapper {
@@ -93,6 +93,9 @@ export default {
   flex-wrap: wrap;
   height: 75vh;
   place-content: center;
+  background-image: url('images/landing.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about_wrapper {

@@ -17,9 +17,9 @@ a,
 }
 
 a:hover {
-  color: #FBC145;
+  color: #00a39e;
 }
 
 .router-link-active {
-  color: #FBC145;
+  color: #00a39e;
 }

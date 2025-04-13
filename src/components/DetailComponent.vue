@@ -75,7 +75,7 @@ export default {
     margin-top: 2em;
     position: absolute;
     align-self: center;
-    color: #FBC145;
+    color: #00a39e;
 }
 
 .icon {
@@ -84,7 +84,7 @@ export default {
 }
 
 .icon:hover {
-    color: #FBC145;
+    color: #00a39e;
     transition: color 250ms linear;
     cursor: pointer;
 }

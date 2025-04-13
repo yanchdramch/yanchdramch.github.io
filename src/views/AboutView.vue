@@ -1,11 +1,5 @@
 <template>
   <div class="about">
-    <div class="about_title">
-      <div class="normal">{{ pageTitle[selectedLang].normal }}<div class="colored">
-          {{ pageTitle[selectedLang].colored }}
-        </div>
-      </div>
-    </div>
     <div class="details">
       <div class="col leftcol">
         <div class="pic_container">
@@ -125,7 +119,7 @@ export default {
 }
 
 .overlay:hover {
-  background-color: #FBC14520;
+  background-color: #00a39e20;
   cursor: pointer;
   transition: background-color 250ms linear;
 }
@@ -150,6 +144,7 @@ export default {
   padding-bottom: 2rem;
   margin-bottom: 0.5rem;
   padding-left: 4em;
+  font-family: "Playfair Display", serif;
 }
 
 .normal {
@@ -166,7 +161,7 @@ export default {
 }
 
 .colored {
-  color: #FBC145;
+  color: #00a39e;
   font-weight: 700;
   font-size: 2rem;
   flex-grow: 0;
@@ -187,7 +182,6 @@ export default {
   scrollbar-width: thin;
   justify-content: space-evenly;
   padding-bottom: 2rem;
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
 }
 
 .col {

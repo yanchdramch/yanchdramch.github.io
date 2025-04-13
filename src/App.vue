@@ -121,7 +121,8 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 /* General Reset */
 * {
@@ -134,11 +135,11 @@ export default {
 html,
 body {
   min-height: 100%;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fffdf6;
   overflow: visible;
   scrollbar-width: none;
-  background: #2f2061;
+  background: #2c1338;
 }
 
 /* Header Styling */
@@ -148,7 +149,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 10;
-  background: #2f2061;
+  background: #2c1338;
   padding: v-bind('navPadding');
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -171,7 +172,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #FBC145;
+  color: #00a39e;
 }
 
 /* Main Content */
@@ -188,7 +189,7 @@ router-view {
 
 router-view h1 {
   font-size: 2.5rem;
-  color: #FBC145;
+  color: #00a39e;
 }
 
 router-view p {
@@ -242,7 +243,7 @@ router-view p {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
     opacity 0.55s ease;
-  border: 0.1em solid #2f2061;
+  border: 0.1em solid #2c1338;
 }
 
 #menuToggle span:first-child {

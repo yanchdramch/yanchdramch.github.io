@@ -84,16 +84,17 @@ export default {
     flex-wrap: wrap;
     margin-bottom: -0.5rem;
     padding-top: 2em;
+    font-family: "Playfair Display", serif;
 }
 
 .surname {
-    color: #FBC145;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 3.5rem;
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: max-content;
+    font-family: "Playfair Display", serif;
 }
 
 @media (max-width: 400px) {

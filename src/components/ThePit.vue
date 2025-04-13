@@ -117,6 +117,7 @@ export default {
   margin-bottom: 3em;
   padding-top: 2em;
   justify-self: center;
+  font-family: "Playfair Display", serif;
 }
 
 .the_pit {

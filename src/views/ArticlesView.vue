@@ -9,12 +9,12 @@
       <div class="publications">
         <div class="article_card" v-for="article in sortedArticles" @click="navigateToArticle(article.id)">
           <img class="card_image" :src="article.thumbnail"></img>
-          <div class="card_type">{{ article.type }}</div>
-          <div class="card_title">{{ article.title }}</div>
+          <div class="card_type">{{ article.type[selectedLang] }}</div>
+          <div class="card_title">{{ article.title[selectedLang] }}</div>
           <div>
             <div class="card_date">{{ getDateForLocale(article.date, selectedLang) }}</div>
             <div class="card_time">
-              <FontAwesomeIcon class="clock_icon" :icon="['far', 'clock']" size="lg" :style="{ color: '#2f2061' }" />
+              <FontAwesomeIcon class="clock_icon" :icon="['far', 'clock']" size="lg" :style="{ color: '#2c1338' }" />
               {{ article.length }} MIN READ
             </div>
           </div>
@@ -137,7 +137,7 @@ export default {
 }
 
 .colored {
-  color: #FBC145;
+  color: #00a39e;
   font-weight: 700;
   font-size: 2rem;
   flex-grow: 0;
@@ -165,9 +165,9 @@ export default {
   background-color: #fffdf6;
   width: 300px;
   height: 400px;
-  box-shadow: 4px 4px 10px #2f206130;
+  box-shadow: 4px 4px 10px #2c133830;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  color:#2f2061;
+  color:#2c1338;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -175,7 +175,7 @@ export default {
 
 .article_card:hover {
   transform: translateY(-5px);
-  box-shadow: 6px 6px 15px #2f206145;
+  box-shadow: 6px 6px 15px #2c133845;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -187,7 +187,7 @@ export default {
 }
 
 .card_type {
-  background-color: #2f2061;
+  background-color: #2c1338;
   color: white;
   font-size: 12px;
   font-weight: bold;
