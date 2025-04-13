@@ -93,7 +93,7 @@ export default {
   flex-wrap: wrap;
   height: 75vh;
   place-content: center;
-  background-image: url('images/landing.png');
+  background-image: url('/images/landing.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
