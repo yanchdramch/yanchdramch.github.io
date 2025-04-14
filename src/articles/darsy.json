@@ -54,9 +54,9 @@
             "type": "paragraph",
             "propList": { 
                 "text": {
-                    "en": "<p style='text-align: justify;'><strong> [&ldquo;BOND 4 LIFE&rdquo; VIDEO EMBEDDED] </strong></p>",
-                    "de": "",
-                    "bg": "<p style='text-align: justify;'><strong>[ &ldquo;</strong><a href='https://youtu.be/Z_HjgQ5I5LM?si=_fkb7aTnfHwg-MGD'><strong>BOND 4 LIFE</strong></a><strong>&rdquo; VID EMBEDDED ]&nbsp;</strong></p>"
+                    "en": "</iframe><iframe width='560' height='315' src='https://www.youtube.com/embed/Z_HjgQ5I5LM?si=0CF9Qcrm1bZzrTy9' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe><iframe width='560' height='315' src='https://www.youtube.com/embed/zsXKu3jOPjs?si=F7jD4zApVTn_3kxt' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen>",
+                    "de": "<iframe width='560' height='315' src='https://www.youtube.com/embed/zsXKu3jOPjs?si=F7jD4zApVTn_3kxt' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe><iframe width='560' height='315' src='https://www.youtube.com/embed/zsXKu3jOPjs?si=F7jD4zApVTn_3kxt' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen>",
+                    "bg": "<iframe width='560' height='315' src='https://www.youtube.com/embed/zsXKu3jOPjs?si=F7jD4zApVTn_3kxt' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe><iframe width='560' height='315' src='https://www.youtube.com/embed/zsXKu3jOPjs?si=F7jD4zApVTn_3kxt' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen>"
                 }
             }
         },
@@ -70,7 +70,7 @@
                 }
             }
         },
-	{ "type": "photo", "propList": { "src": "/images/darsy/darsy1.jpg", "alt": "Some text to show if image does not load", "width": "550px" }},
+	{ "type": "photo", "propList": { "src": "/images/darsy/darsy2.jpg", "alt": "Some text to show if image does not load", "width": "550px" }},
 	{ 
             "type": "paragraph",
             "propList": { 
