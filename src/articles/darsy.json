@@ -7,9 +7,9 @@
     },
     "length": 2,
     "title": {
-        "en": "Underground Echoes: A sip of DARSY’s Replay",
-        "de": "Underground Echoes: A sip of DARSY’s Replay",
-        "bg": "Underground Echoes: A sip of DARSY’s Replay"
+        "en": "Underground Echoes: A sip of DARSY’s 'Replay'",
+        "de": "Underground Echoes: A sip of DARSY’s 'Replay' DE",
+        "bg": "DARSYs Emotional Cocktail - Underground Echoes BG"
     },
     "date": "2025-04-13",
     "thumbnail": "https://www.lifehabitats.com/upload/_custom/files/organisms/96/103_sraka.jpg",
@@ -44,7 +44,7 @@
             "type": "paragraph",
             "propList": { 
                 "text": {
-                    "en": "<p style='text-align: justify;'><span style='font-weight: 400;'> Quick note: that fire in her heart &mdash; it&rsquo;s not about romance. It&rsquo;s about the passions and experiences that shape her as an artist. That message is highlighted in the outro of her track &ldquo;Bond 4 Life&rdquo;. To her, it&rsquo;s &ldquo;a personal touch,&rdquo; a reminder that the song is a tribute to her closest people. She wanted it to sound &ldquo;like a real voice memo, something you&rsquo;d send to your dearest ones&rdquo;. She also revealed that this song features her favorite outfit. </span></p>",
+                    "en": "<p style='text-align: justify;'><span style='font-weight: 400;'>Quick note: that fire in her heart &mdash; it&rsquo;s not about romance. It&rsquo;s about the passions and experiences that shape her as an artist. That message is highlighted in the outro of her track </span><em><span style='font-weight: 400;'>Bond 4 Life</span></em><span style='font-weight: 400;'>. To her, it&rsquo;s &ldquo;a personal touch,&rdquo; a reminder that the song is a tribute to her closest people. She wanted it to sound &ldquo;like a real voice memo, something you&rsquo;d send to your dearest ones&rdquo;. She also revealed that this song features her favorite outfit.</span></p>",
                     "de": "",
                     "bg": "<p style='text-align: justify;'><span style='font-weight: 400;'>Важна вметка: този огън в сърцето не бива да се бърка с романтика &mdash; той представлява интересите и преживяванията, които оформят певицата. Това послание се подчертава с аутрото на песента ѝ </span><em><span style='font-weight: 400;'>Bond 4 Life</span></em><span style='font-weight: 400;'>. За нея то е &bdquo;личен щрих&rdquo;, който цели да звучи като истинско гласово съобщение &mdash; &bdquo;нещо, което би изпратил на най-близките си&ldquo;. Дарси споделя , че в клипа на тази песен е и любимият ѝ тоалет.&nbsp;</span></p>"
                 }
@@ -70,7 +70,7 @@
                 }
             }
         },
-	{ "type": "photo", "propList": { "src": "/images/darsy/darsy2.jpg", "alt": "Some text to show if image does not load", "width": "550px" }},
+	{ "type": "photo", "propList": { "src": "/images/darsy/darsy1.jpg", "alt": "Some text to show if image does not load", "width": "550px" }},
 	{ 
             "type": "paragraph",
             "propList": { 
@@ -85,19 +85,9 @@
             "type": "paragraph",
             "propList": { 
                 "text": {
-                    "en": "<p style='text-align: justify;'><span style='font-weight: 400;'> Safe to say she feels at home in London, but she will also come to her hometown Sofia. There she will serve her emotional cocktail with guitar arrangement by Stoycho Stoev and rhythm from Stiu Ivanov. All of them will be waiting for your reply to their </span> <em> <span style='font-weight: 400;'> Replay </span> </em> <span style='font-weight: 400;'> &mdash; on April 24 at club Stroeja. </span></p>",
+                    "en": "<p style='text-align: justify;'><span style='font-weight: 400;'>Safe to say, Darsy feels at home in London&mdash;still she&rsquo;s flying back to her hometown Sofia to serve her signature emotional cocktail, with guitar by Stoycho Stoev and rhythm from Stiu Ivanov. They&rsquo;ll all be waiting for your reply to their </span><em><span style='font-weight: 400;'>Replay</span></em><span style='font-weight: 400;'>&mdash;live on April 24 at Club Stroeja. So don&rsquo;t wait: &ldquo;book the flight and party hard,&rdquo; as Darsy sings in </span><em><span style='font-weight: 400;'>Dopamine</span></em><span style='font-weight: 400;'>. Can&rsquo;t make it? Then you owe her some online support. Her music and videos are up on all the not-so-underground platforms, so hit follow </span><a href='https://www.instagram.com/_darinamarkova_?igsh=cDZnaXhwajBxOGJy'><span style='font-weight: 400;'>@darinamarkova</span></a><span style='font-weight: 400;'> and subscribe to her </span><a href='https://www.youtube.com/@darina_markova'><span style='font-weight: 400;'>channel</span></a><span style='font-weight: 400;'>. And the cocktail recipe? Darsy spills: &ldquo;A dose of euphoria, maybe a pinch of fear, lots of joy and surprise&hellip; and the base is definitely love for life.&rdquo;</span></p>",
                     "de": "",
                     "bg": "<p style='text-align: justify;'><span style='font-weight: 400;'>Не го пропускай, понеже Дарси вече развива кариерата си и в Лондон, където учи музикален театър. Метафоричното въведение на статията всъщност има своето реално отражение &mdash; в 93 Feet East, лондонския пъб, където тя представи дебютния си албум </span><em><span style='font-weight: 400;'>Replay</span></em><span style='font-weight: 400;'>. Там Дарси също се чувства в свои води, понеже за нея ъндърграундът е точно като лондонското метро &mdash; свързва хора от различни общности и ги придвижва в познати или не толкова познати посоки. Изключително благодарна е на агентите и промоутърите, които се вслушват и вглеждат в таланта на младите артисти и подкрепят пътя им.</span></p>"
-                }
-            }
-        },
-	{ 
-            "type": "paragraph",
-            "propList": { 
-                "text": {
-                    "en": "<p style='text-align: justify;'><span style='font-weight: 400;'> Make sure to pre-game with her music and videos &mdash; available on not-so-underground platforms. For more info: follow </span> <a href='https://www.instagram.com/_darinamarkova_?igsh=cDZnaXhwajBxOGJy'> <span style='font-weight: 400;'> @darinamarkova </span> </a> <span style='font-weight: 400;'> and subscribe to her </span> <a href='https://www.youtube.com/@darina_markova'> <span style='font-weight: 400;'> channel </span> </a> <span style='font-weight: 400;'> . As for the cocktail recipe? Darsy spills: &ldquo;A dose of euphoria, maybe a pinch of fear, lots of joy and surprise&hellip; and the base is definitely love for life&ldquo;. </span></p>",
-                    "de": "",
-                    "bg": ""
                 }
             }
         }
