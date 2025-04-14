@@ -70,7 +70,7 @@
                 }
             }
         },
-	{ "type": "photo", "propList": { "src": "/images/darsy/darsy1.jpg", "alt": "Some text to show if image does not load", "width": "550px" }},
+	{ "type": "photo", "propList": { "src": "/images/darsy/darsy2.jpg", "alt": "Some text to show if image does not load", "width": "550px" }},
 	{ 
             "type": "paragraph",
             "propList": { 
