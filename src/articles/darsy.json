@@ -24,13 +24,12 @@
             "type": "paragraph",
             "propList": { 
                 "text": {
-                    "en": "<p style='text-align: justify;'><span style='font-weight: 400;'> Darsy&rsquo;s voice pulls me in instantly with its pure tone and emotional charge. Her music is a </span> <a href='https://youtu.be/zsXKu3jOPjs?si=F7jD4zApVTn_3kxt'> <span style='font-weight: 400;'> bittersweet cocktail </span> </a> <span style='font-weight: 400;'> where hope and nostalgia waltz together. The first sip &mdash; the track </span> <a href='https://youtu.be/6guT5bRpjm8?si=iPrjYjMnlnherqM3'> <em> <span style='font-weight: 400;'> Heart 2 Heart </span> </em> </a> <span style='font-weight: 400;'> &mdash; takes me to a beach where my heart beats in sweet romance. The waves caress me, but they also bring deep tides of vulnerability. I get dizzy, until I realize it&rsquo;s &ldquo;just an illusion&rdquo; as Darsy sings in her first Bulgarian track </span> <a href='https://youtu.be/HUStXU_He8o?si=JSPupxZri2Msa5WV'> <em> <span style='font-weight: 400;'> ?????? </span> </em> </a> <span style='font-weight: 400;'> [ </span> <em> <span style='font-weight: 400;'> Illusion </span> </em> <span style='font-weight: 400;'> ]. In it, she sings of directing a mental fantasy &mdash; the kind we build when we get a crush. Her song is about hitting pause on the movie and washing back onto the shores of reality. </span></p>",
+                    "en": "<p style='text-align: justify;'><span style='font-weight: 400;'> Darsy&rsquo;s voice pulls me in instantly with its pure tone and emotional charge. Her music is a </span> <a href='https://youtu.be/zsXKu3jOPjs?si=F7jD4zApVTn_3kxt'> <span style='font-weight: 400;'> bittersweet cocktail </span> </a> <span style='font-weight: 400;'> where hope and nostalgia waltz together. The first sip &mdash; the track </span> <a href='https://youtu.be/6guT5bRpjm8?si=iPrjYjMnlnherqM3'> <em> <span style='font-weight: 400;'> Heart 2 Heart </span> </em> </a> <span style='font-weight: 400;'> &mdash; takes me to a beach where my heart beats in sweet romance. The waves caress me, but they also bring deep tides of vulnerability. I get dizzy, until I realize it&rsquo;s &ldquo;just an illusion&rdquo; as Darsy sings in her first Bulgarian track </span> <a href='https://youtu.be/HUStXU_He8o?si=JSPupxZri2Msa5WV'> <em> <span style='font-weight: 400;'> Илюзия </span> </em> </a> <span style='font-weight: 400;'> [ </span> <em> <span style='font-weight: 400;'> Illusion </span> </em> <span style='font-weight: 400;'> ]. In it, she sings of directing a mental fantasy &mdash; the kind we build when we get a crush. Her song is about hitting pause on the movie and washing back onto the shores of reality. </span></p>",
                     "de": "",
                     "bg": ""
                 }
             }
         },
-        { "type": "photo", "propList": { "src": "/images/darsy/darsy1.jpg", "alt": "Some text to show if image does not load", "width": "550px" }},
         { 
             "type": "paragraph",
             "propList": { 
@@ -41,7 +40,6 @@
                 }
             }
         },
-	{ "type": "photo", "propList": { "src": "/images/darsy/darsy1.jpg", "alt": "Some text to show if image does not load", "width": "550px" }},
         { 
             "type": "paragraph",
             "propList": { 
@@ -61,8 +59,57 @@
                     "bg": ""
                 }
             }
+        },
+	{ 
+            "type": "paragraph",
+            "propList": { 
+                "text": {
+                    "en": "<p style='text-align: justify;'><strong> [&ldquo;BOND 4 LIFE&rdquo; VIDEO EMBEDDED] </strong></p>",
+                    "de": "",
+                    "bg": ""
+                }
+            }
+        },
+	{ 
+            "type": "paragraph",
+            "propList": { 
+                "text": {
+                    "en": "<p style='text-align: justify;'><span style='font-weight: 400;'> Darsy doesn&rsquo;t just deliver authentic messages &mdash; her music videos invite true connection while remaining technically sharp. She never disappoints with set design and outfits that fully match her concept. But it takes work. Darsy describes the process as piecing together a puzzle and building a detailed storyboard. She praises her tech team, who honor every detail. Her favorite shoot? The one for </span> <em> <span style='font-weight: 400;'> Илюзия </span> </em> <span style='font-weight: 400;'> [ </span> <em> <span style='font-weight: 400;'> Illusion </span> </em> <span style='font-weight: 400;'> ]., even though she sympathizes with the poor cameraman who had to crouch among plastic trees in a 3&times;3 room until he caught the perfect shot. Darsy says she doesn&rsquo;t want to box herself in. She wants to work with what she&rsquo;s got &mdash; turning &ldquo;studio precision&rdquo; into &ldquo;shared emotion&rdquo;. </span></p>",
+                    "de": "",
+                    "bg": ""
+                }
+            }
+        },
+	{ "type": "photo", "propList": { "src": "/images/darsy/darsy1.jpg", "alt": "Some text to show if image does not load", "width": "550px" }},
+	{ 
+            "type": "paragraph",
+            "propList": { 
+                "text": {
+                    "en": "<p style='text-align: justify;'><span style='font-weight: 400;'> That&rsquo;s exactly what she did in March at the London pub 93 Feet East, where she premiered her debut album Replay. For Darsy, the underground is just like the London Tube &mdash; &ldquo;it connects people from different walks of life and carries them to familiar or unfamiliar destinations&rdquo;. She&rsquo;s incredibly grateful to the agents and promoters who truly see and hear young artists, and support their journey. </span></p>",
+                    "de": "",
+                    "bg": ""
+                }
+            }
+        },
+	{ 
+            "type": "paragraph",
+            "propList": { 
+                "text": {
+                    "en": "<p style='text-align: justify;'><span style='font-weight: 400;'> Safe to say she feels at home in London, but she will also come to her hometown Sofia. There she will serve her emotional cocktail with guitar arrangement by Stoycho Stoev and rhythm from Stiu Ivanov. All of them will be waiting for your reply to their </span> <em> <span style='font-weight: 400;'> Replay </span> </em> <span style='font-weight: 400;'> &mdash; on April 24 at club Stroeja. </span></p>",
+                    "de": "",
+                    "bg": ""
+                }
+            }
+        },
+	{ 
+            "type": "paragraph",
+            "propList": { 
+                "text": {
+                    "en": "<p style='text-align: justify;'><span style='font-weight: 400;'> Make sure to pre-game with her music and videos &mdash; available on not-so-underground platforms. For more info: follow </span> <a href='https://www.instagram.com/_darinamarkova_?igsh=cDZnaXhwajBxOGJy'> <span style='font-weight: 400;'> @darinamarkova </span> </a> <span style='font-weight: 400;'> and subscribe to her </span> <a href='https://www.youtube.com/@darina_markova'> <span style='font-weight: 400;'> channel </span> </a> <span style='font-weight: 400;'> . As for the cocktail recipe? Darsy spills: &ldquo;A dose of euphoria, maybe a pinch of fear, lots of joy and surprise&hellip; and the base is definitely love for life&ldquo;. </span></p>",
+                    "de": "",
+                    "bg": ""
+                }
+            }
         }
     ]
 }
-
-  
