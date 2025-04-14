@@ -16,7 +16,7 @@
     "text": {
         "en": "I hear a distant echo &mdash; like a melody buried deep within the earth, not seeking escape, but rising, blooming from the inside out. I dive into its echoing waves, following the sound like a compass through fog &mdash; until I find myself in a space lit by mystical purple light. That&rsquo;s where I see her &mdash; the siren who lured me with her voice. Trapped in a glass </span><a href='https://open.spotify.com/intl-de/track/2ZYnG9Yg0lXatvA4oNQy9X?si=ada16b3e42284cea'><span style='font-weight: 400;'>capsule</span></a><span style='font-weight: 400;'>, cracking under the unearthly frequencies of her song.",
         "de": "Ich höre ein fernes Echo – wie eine Melodie, tief in der Erde vergraben, die keinen Ausweg sucht, sondern sich von innen erhebt und blüht. Ich tauche in die hallenden Wellen ein, folge dem Klang wie einem Kompass durch den Nebel – und finde mich in einem Raum wieder, erleuchtet von mystischem lilafarbenem Licht. Dort sehe ich sie – die Sirene, die mich mit ihrer Stimme verführt hat. Eingeschlossen in eine gläserne Kapsel, die von den überirdischen Frequenzen ihres Gesangs zerbricht.",
-        "bg": "Чувам далечно ехо &mdash; сякаш мелодия, заровена дълбоко в земята, която не търси изход, а се извисява и цъфти отвътре. Потапям се в ехтящите вълни, следвам звука като компас през мъглата &mdash; и се озовавам в пространство, осветено от мистична лилава светлина. Там я виждам &mdash; сирената, примамила ме с гласа си. Затворена в стъклена капсула, която се пропуква от неземните честоти на песента ѝ."
+        "bg": "<p style='text-align: justify;'><span style='font-weight: 400;'>Чувам далечно ехо &mdash; сякаш мелодия, заровена дълбоко в земята, която не търси изход, а се извисява и цъфти отвътре. Потапям се в ехтящите вълни, следвам звука като компас през мъглата &mdash; озовавам се в пространство, осветено от мистична лилава светлина. Там я виждам &mdash; сирената, примамила ме с гласа си. Затворена в стъклена </span><a href='https://open.spotify.com/intl-de/track/2ZYnG9Yg0lXatvA4oNQy9X?si=ada16b3e42284cea'><span style='font-weight: 400;'>капсула</span></a><span style='font-weight: 400;'>, която се пропуква от неземните честоти на песента ѝ.</span></p>"
     },
     "elements": [
         { "type": "photo", "propList": { "src": "/images/darsy/darsy1.jpg", "alt": "Some text to show if image does not load", "width": "550px" }},
@@ -26,7 +26,7 @@
                 "text": {
                     "en": "<p style='text-align: justify;'><span style='font-weight: 400;'> Darsy&rsquo;s voice pulls me in instantly with its pure tone and emotional charge. Her music is a </span> <a href='https://youtu.be/zsXKu3jOPjs?si=F7jD4zApVTn_3kxt'> <span style='font-weight: 400;'> bittersweet cocktail </span> </a> <span style='font-weight: 400;'> where hope and nostalgia waltz together. The first sip &mdash; the track </span> <a href='https://youtu.be/6guT5bRpjm8?si=iPrjYjMnlnherqM3'> <em> <span style='font-weight: 400;'> Heart 2 Heart </span> </em> </a> <span style='font-weight: 400;'> &mdash; takes me to a beach where my heart beats in sweet romance. The waves caress me, but they also bring deep tides of vulnerability. I get dizzy, until I realize it&rsquo;s &ldquo;just an illusion&rdquo; as Darsy sings in her first Bulgarian track </span> <a href='https://youtu.be/HUStXU_He8o?si=JSPupxZri2Msa5WV'> <em> <span style='font-weight: 400;'> Илюзия </span> </em> </a> <span style='font-weight: 400;'> [ </span> <em> <span style='font-weight: 400;'> Illusion </span> </em> <span style='font-weight: 400;'> ]. In it, she sings of directing a mental fantasy &mdash; the kind we build when we get a crush. Her song is about hitting pause on the movie and washing back onto the shores of reality. </span></p>",
                     "de": "",
-                    "bg": ""
+                    "bg": "<p style='text-align: justify;'><span style='font-weight: 400;'>Гласът на Дарси веднага ме привлича с чистото си звучене и емоционален заряд. Музиката ѝ е </span><a href='https://youtu.be/zsXKu3jOPjs?si=MaoVxbvASTko0Qar'><span style='font-weight: 400;'>коктейл</span></a><span style='font-weight: 400;'> със сладко-горчив послевкус, в който танцуват едновременно надежда и носталгия. Първата глътка &mdash; песента </span><a href='https://youtu.be/6guT5bRpjm8?si=iPrjYjMnlnherqM3'><em><span style='font-weight: 400;'>Heart 2 Heart</span></em></a><span style='font-weight: 400;'> &mdash; ме пренася на плаж, където сърцето ми затуптява в сладка романтика. Вълните ме галят и носят дълбоки приливи на уязвимост. Замайвам се, докато не осъзная, че това е &bdquo;просто илюзия&rdquo;, както Дарси пее в първата си българска песен </span><a href='https://youtu.be/HUStXU_He8o?si=JSPupxZri2Msa5WV'><em><span style='font-weight: 400;'>Илюзия</span></em></a><span style='font-weight: 400;'>. В нея тя говори за режисирането на умствена фантастика, която човек сътворява, когато се влюби. Песента ѝ е за спирането на филма и връщането на брега на реалността. Според мен идеално е уловила капана, който хората сами си поставят, когато, казано на чист български, се филмират.</span></p>"
                 }
             }
         },
@@ -34,19 +34,9 @@
             "type": "paragraph",
             "propList": { 
                 "text": {
-                    "en": "<p style='text-align: justify;'><span style='font-weight: 400;'> The next sip of the cocktail is a new wave of dopamine rushing in from the endless sensations swirling in Darsy&rsquo;s heart. My own heart, just like hers, burns with many passions. And sometimes, I&rsquo;m scared I&rsquo;ll burn out from them. So I ask her if she knows that fear too. She smiled and said:&nbsp; </span></p>",
+                    "en": "<p style='text-align: justify;'><span style='font-weight: 400;'>The next sip of the cocktail is a new wave of dopamine rushing in from the endless sensations swirling in Darsy&rsquo;s heart. My own heart, just like hers, burns with many passions. And sometimes, I&rsquo;m scared I&rsquo;ll burn out from them. So I ask her if she knows that fear too. She smiled and said: &ldquo;I see myself as brave, but the more I perform and gain experience, the more caution starts to take over. &lsquo;</span><a href='https://youtu.be/5Lp3HVhH-wM?si=aX99V5G1n7vlk8Ry'><span style='font-weight: 400;'>Dopamine</span></a><span style='font-weight: 400;'>&rsquo; reminds me &mdash; not to let fear and doubt hold me back. To feel and love freely, to embrace life with childlike wonder and curiosity. The strong fire in my heart might steer me away from a dream for a moment, but it will never burn it out&mdash;as long as I know my path and truly want it.&rdquo;</span></p>",
                     "de": "",
-                    "bg": ""
-                }
-            }
-        },
-        { 
-            "type": "paragraph",
-            "propList": { 
-                "text": {
-                    "en": "<p style='text-align: justify;'><span style='font-weight: 400;'> &ldquo;I see myself as brave, but the more I perform and gain experience, the more caution starts to take over. &lsquo; </span> <a href='https://youtu.be/5Lp3HVhH-wM?si=aX99V5G1n7vlk8Ry'> <span style='font-weight: 400;'> Dopamine </span> </a> <span style='font-weight: 400;'> &rsquo; reminds me &mdash; not to let fear and doubt hold me back. To feel and love freely, to embrace life with childlike wonder and curiosity. The strong fire in my heart might steer me away from a dream for a moment, but it will never burn it out&mdash;as long as I know my path and truly want it&rdquo;. </span></p>",
-                    "de": "",
-                    "bg": ""
+                    "bg": "<p style='text-align: justify;'><span style='font-weight: 400;'>Следващата глътка коктейл е като измъкване от капана и заливане с вълна допамин от безкрайните усещания, бушуващи в сърцето на Дарси. Макар и моето сърце да ври и кипи като нейното, често се плаша, че ще прегоря от възможностите, към които огънят ме тегли. Затова я питам дали и тя познава този страх. Тя се усмихва и отговаря;&bdquo;Смятам се за смела, но колкото повече излизам на сцена и трупам опит, толкова повече предпазливостта започва да надделява&rdquo;. </span><a href='https://youtu.be/5Lp3HVhH-wM?si=aX99V5G1n7vlk8Ry'><em><span style='font-weight: 400;'>Dopamine</span></em></a><span style='font-weight: 400;'> ми напомня &mdash; да не позволявам на страховете и съмненията да ме спират, да усещам и обичам свободно и да прегръщам живота с детско вълнение и любопитство. &bdquo;Силен огън гори в сърцето ми и понякога може да ме отклони от мечтата ми за миг, но никога няма да я изгори напълно &mdash; стига да знам пътя си и наистина да го искам.&rdquo;</span></p>"
                 }
             }
         },
@@ -56,7 +46,7 @@
                 "text": {
                     "en": "<p style='text-align: justify;'><span style='font-weight: 400;'> Quick note: that fire in her heart &mdash; it&rsquo;s not about romance. It&rsquo;s about the passions and experiences that shape her as an artist. That message is highlighted in the outro of her track &ldquo;Bond 4 Life&rdquo;. To her, it&rsquo;s &ldquo;a personal touch,&rdquo; a reminder that the song is a tribute to her closest people. She wanted it to sound &ldquo;like a real voice memo, something you&rsquo;d send to your dearest ones&rdquo;. She also revealed that this song features her favorite outfit. </span></p>",
                     "de": "",
-                    "bg": ""
+                    "bg": "<p style='text-align: justify;'><span style='font-weight: 400;'>Важна вметка: този огън в сърцето не бива да се бърка с романтика &mdash; той представлява интересите и преживяванията, които оформят певицата. Това послание се подчертава с аутрото на песента ѝ </span><em><span style='font-weight: 400;'>Bond 4 Life</span></em><span style='font-weight: 400;'>. За нея то е &bdquo;личен щрих&rdquo;, който цели да звучи като истинско гласово съобщение &mdash; &bdquo;нещо, което би изпратил на най-близките си&ldquo;. Дарси споделя , че в клипа на тази песен е и любимият ѝ тоалет.&nbsp;</span></p>"
                 }
             }
         },
@@ -66,7 +56,7 @@
                 "text": {
                     "en": "<p style='text-align: justify;'><strong> [&ldquo;BOND 4 LIFE&rdquo; VIDEO EMBEDDED] </strong></p>",
                     "de": "",
-                    "bg": ""
+                    "bg": "<p style='text-align: justify;'><strong>[ &ldquo;</strong><a href='https://youtu.be/Z_HjgQ5I5LM?si=_fkb7aTnfHwg-MGD'><strong>BOND 4 LIFE</strong></a><strong>&rdquo; VID EMBEDDED ]&nbsp;</strong></p>"
                 }
             }
         },
@@ -76,7 +66,7 @@
                 "text": {
                     "en": "<p style='text-align: justify;'><span style='font-weight: 400;'> Darsy doesn&rsquo;t just deliver authentic messages &mdash; her music videos invite true connection while remaining technically sharp. She never disappoints with set design and outfits that fully match her concept. But it takes work. Darsy describes the process as piecing together a puzzle and building a detailed storyboard. She praises her tech team, who honor every detail. Her favorite shoot? The one for </span> <em> <span style='font-weight: 400;'> Илюзия </span> </em> <span style='font-weight: 400;'> [ </span> <em> <span style='font-weight: 400;'> Illusion </span> </em> <span style='font-weight: 400;'> ]., even though she sympathizes with the poor cameraman who had to crouch among plastic trees in a 3&times;3 room until he caught the perfect shot. Darsy says she doesn&rsquo;t want to box herself in. She wants to work with what she&rsquo;s got &mdash; turning &ldquo;studio precision&rdquo; into &ldquo;shared emotion&rdquo;. </span></p>",
                     "de": "",
-                    "bg": ""
+                    "bg": "<p style='text-align: justify;'><span style='font-weight: 400;'>Освен с автентично музикално послание, Дарси се отличава и с визията на видеата си, които канят за истинска свързаност, докато остават технически изпипани. Никога не разочарова с декор и тоалети, които да пасват на концепцията ѝ. Всичко това се постига с много усилия: Дарси описва процеса като събиране на пъзел и създаване на детайлно сюжетно табло. Тя хвали техническия си екип, който се съобразява с всеки аспект. Любим ѝ е снимачният процес на&nbsp; &bdquo;Илюзия&rdquo;, макар да съчувства на оператора, който се е криел сред пластмасови дървета в стая 3 м &times; 3 м, докато не улови перфектния кадър. Дарси споделя, че не иска да се поставя в рамка, а да работи с наличното, докато превърне &bdquo;прецизността в студиото&rdquo; в &bdquo;споделена емоция&rdquo;.&nbsp;</span></p>"
                 }
             }
         },
@@ -87,7 +77,7 @@
                 "text": {
                     "en": "<p style='text-align: justify;'><span style='font-weight: 400;'> That&rsquo;s exactly what she did in March at the London pub 93 Feet East, where she premiered her debut album Replay. For Darsy, the underground is just like the London Tube &mdash; &ldquo;it connects people from different walks of life and carries them to familiar or unfamiliar destinations&rdquo;. She&rsquo;s incredibly grateful to the agents and promoters who truly see and hear young artists, and support their journey. </span></p>",
                     "de": "",
-                    "bg": ""
+                    "bg": "<p style='text-align: justify;'><span style='font-weight: 400;'>Ако искаш да опиташ от емоционалния ѝ коктейл &ndash; ела в клуб &bdquo;Строежа&ldquo;, София, на 24 април от 19 ч. Предварително пригеймни с музиката и видеата ѝ &mdash; достъпни на даже не чак толкова ъндърграунд платформи. За повече инфо: последвай </span><a href='https://www.instagram.com/_darinamarkova_?igsh=cDZnaXhwajBxOGJy'><span style='font-weight: 400;'>@</span><em><span style='font-weight: 400;'>darinamaekova</span></em></a><span style='font-weight: 400;'> и се абонирай за </span><a href='https://www.youtube.com/@darina_markova'><span style='font-weight: 400;'>канала </span></a><span style='font-weight: 400;'>ѝ. За котейлната рецепта Дарси издаде:&nbsp; &bdquo;Доза еуфория, може би щипка страх, много радост и изненада&hellip; а основата със сигурност ще е любов към живота&ldquo;. Ще го сервира се с китарен аранжимент от Стойчо Стоев и ритъм от Стю Иванов. Всички те ще очакват </span><em><span style='font-weight: 400;'>твоя риплай</span></em><span style='font-weight: 400;'> на техния </span><em><span style='font-weight: 400;'>Replay</span></em><span style='font-weight: 400;'> &mdash; на 24 април.</span></p>"
                 }
             }
         },
@@ -97,7 +87,7 @@
                 "text": {
                     "en": "<p style='text-align: justify;'><span style='font-weight: 400;'> Safe to say she feels at home in London, but she will also come to her hometown Sofia. There she will serve her emotional cocktail with guitar arrangement by Stoycho Stoev and rhythm from Stiu Ivanov. All of them will be waiting for your reply to their </span> <em> <span style='font-weight: 400;'> Replay </span> </em> <span style='font-weight: 400;'> &mdash; on April 24 at club Stroeja. </span></p>",
                     "de": "",
-                    "bg": ""
+                    "bg": "<p style='text-align: justify;'><span style='font-weight: 400;'>Не го пропускай, понеже Дарси вече развива кариерата си и в Лондон, където учи музикален театър. Метафоричното въведение на статията всъщност има своето реално отражение &mdash; в 93 Feet East, лондонския пъб, където тя представи дебютния си албум </span><em><span style='font-weight: 400;'>Replay</span></em><span style='font-weight: 400;'>. Там Дарси също се чувства в свои води, понеже за нея ъндърграундът е точно като лондонското метро &mdash; свързва хора от различни общности и ги придвижва в познати или не толкова познати посоки. Изключително благодарна е на агентите и промоутърите, които се вслушват и вглеждат в таланта на младите артисти и подкрепят пътя им.</span></p>"
                 }
             }
         },
