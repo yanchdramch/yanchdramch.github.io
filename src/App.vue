@@ -8,7 +8,7 @@
             <RouterLink to="/">{{ routeTexts.home[selectedLang] }}</RouterLink>
             <RouterLink to="/articles">{{ routeTexts.articles[selectedLang] }}</RouterLink>
             <RouterLink to="/music">{{ routeTexts.music[selectedLang] }}</RouterLink>
-            <RouterLink to="/gallery">{{ routeTexts.gallery[selectedLang] }}</RouterLink>
+            <!-- <RouterLink to="/gallery">{{ routeTexts.gallery[selectedLang] }}</RouterLink> -->
             <!-- <RouterLink to="/about">{{ routeTexts.about[selectedLang] }}</RouterLink> -->
           </nav>
           <nav role="navigation" v-if="smallScreen">
@@ -29,10 +29,10 @@
                   <RouterLink to="/music" v-on:click="toggleMenuCheckbox()">{{
                     routeTexts.music[selectedLang] }}</RouterLink>
                 </li>
-                <li>
+                <!-- <li>
                   <RouterLink to="/gallery" v-on:click="toggleMenuCheckbox()">{{
                     routeTexts.gallery[selectedLang] }}</RouterLink>
-                </li>
+                </li> -->
                 <!-- <li>
                   <RouterLink to="/about" v-on:click="toggleMenuCheckbox()">{{ routeTexts.about[selectedLang] }}
                   </RouterLink>

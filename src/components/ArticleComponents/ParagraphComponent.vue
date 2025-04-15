@@ -38,8 +38,8 @@ export default {
     flex-direction: row;
     width: 95%;
     text-wrap: wrap;
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
+    margin-bottom: 1em;
+    text-align: justify;
 }
 
 .detail_icon {

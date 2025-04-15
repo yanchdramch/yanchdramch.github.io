@@ -22,7 +22,7 @@
         <div class="icons">
           <div class="left_icons">
             <DetailComponent icon="youtube" set="fab" link="https://www.youtube.com/@yana.dramova"/>
-            <DetailComponent icon="envelope" set="fas" link="textToCopy" copy/>
+            <DetailComponent icon="envelope" set="fas" link="yanch.dramch@gmail.com" copy/>
             <DetailComponent icon="square-pinterest" set="fab" link="https://www.pinterest.com/yanchdramch/"/>
           </div>
           <div class="right_icons">
@@ -234,6 +234,7 @@ export default {
   padding-right: 1em;
   margin-bottom: 1em;
   font-size: 1.1em;
+  text-align: justify;
 }
 
 .icons {

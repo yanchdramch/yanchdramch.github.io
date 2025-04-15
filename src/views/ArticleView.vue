@@ -185,6 +185,11 @@ export default {
 
 :deep(a) {
   padding: 0;
+  text-decoration: underline;
+}
+
+:deep(p) {
+  margin-bottom: 0;
 }
 
 .photo {
@@ -195,7 +200,16 @@ export default {
   margin: 1em;
 }
 
+:deep(iframe) {
+  position: relative;
+  min-width: 40vw;
+  min-height: 35vh;
+  max-width: 100%;
+  max-height: 60vh;
+  border: 2px solid #fffdf6;
+}
+
 .first_par {
-  margin-bottom: 1em;
+  text-align: justify;
 }
 </style>

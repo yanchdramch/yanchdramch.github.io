@@ -14,11 +14,11 @@ export const routes = {
     "en" : "Listen",
     "bg" : "Чуй"
   },
-  "gallery": {
-    "de" : "Sieh",
-    "en" : "See",
-    "bg" : "Виж"
-  },
+  // "gallery": {
+  //   "de" : "Sieh",
+  //   "en" : "See",
+  //   "bg" : "Виж"
+  // },
   "about": {
     "de" : "Über mich",
     "en" : "About",
