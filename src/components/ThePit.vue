@@ -7,13 +7,13 @@
             <div class="the_pit">
                 <div class="col leftcol"> 
                     <p class="strophe">
-                        Hi, I'm Yana – loud and bright,<br>
+                        Heyo, I'm Yana – loud and bright,<br>
                         Dramatic by name, chaotic by right.<br>
                         Born in Sofia, now in the Ruhr,<br>
                         Studying media, politics – nerdy for sure.
                     </p>
                     <p class="strophe"> 
-                        A geek for words, artistic flair,<br>
+                        A geek for words with artistic flair,<br>
                         Too many passions? Yep, I’m aware.<br>
                         Not diagnosed, just wired to be,<br>
                         Always in motion – welcome to me!<br>
