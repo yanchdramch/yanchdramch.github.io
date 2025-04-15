@@ -32,7 +32,7 @@ export default {
     mounted: function () {
         this.timer = setInterval(() => {
             this.active_item = (this.active_item + 1) % this.competencies.length;
-        }, 3000)
+        }, 2000)
     },
 
     data() {
