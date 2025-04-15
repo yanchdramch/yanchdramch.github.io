@@ -15,7 +15,7 @@
             <div class="card_date">{{ getDateForLocale(article.date, selectedLang) }}</div>
             <div class="card_time">
               <FontAwesomeIcon class="clock_icon" :icon="['far', 'clock']" size="lg" :style="{ color: '#2c1338' }" />
-              {{ article.length }} MIN READ
+              {{ article.length }} {{ lenText[selectedLang] }}
             </div>
           </div>
         </div>
@@ -88,6 +88,11 @@ export default {
           "normal": "Всички ",
           "colored": "Писания"
         }
+      },
+      lenText: {
+        "en": "MIN",
+        "de": "MIN",
+        "bg": "МИН"
       }
     };
   },
