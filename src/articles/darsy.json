@@ -19,7 +19,7 @@
         "bg": "<p style='text-align: justify;'><span style='font-weight: 400;'>Чувам далечно ехо &mdash; сякаш мелодия, заровена дълбоко в земята, която не търси изход, а се извисява и цъфти отвътре. Потапям се в ехтящите вълни, следвам звука като компас през мъглата &mdash; озовавам се в пространство, осветено от мистична лилава светлина. Там я виждам &mdash; сирената, примамила ме с гласа си. Затворена в стъклена </span><a href='https://open.spotify.com/intl-de/track/2ZYnG9Yg0lXatvA4oNQy9X?si=ada16b3e42284cea'><span style='font-weight: 400;'>капсула</span></a><span style='font-weight: 400;'>, която се пропуква от неземните честоти на песента ѝ.</span></p>"
     },
     "elements": [
-        { "type": "photo", "propList": { "src": "/images/darsy/darsy1.jpg", "alt": "Some text to show if image does not load", "width": "550px" }},
+        { "type": "photo", "propList": { "src": "/images/darsy/darsy1.jpg", "alt": "Some text to show if image does not load", "width": "700px" }},
         { 
             "type": "paragraph",
             "propList": { 
