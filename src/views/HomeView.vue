@@ -51,7 +51,7 @@ export default {
       buttonText: {
         "en": "Get in Touch",
         "de": "Kontakt aufnehmen",
-        "bg": "Свържи се с Мен",
+        "bg": "Свържи се с мен",
       },
     };
   },

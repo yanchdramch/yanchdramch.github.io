@@ -13,7 +13,7 @@
                   <div class="card_date">{{ getDateForLocale(article.date, selectedLang) }}</div>
                   <div class="card_time">
                     <FontAwesomeIcon class="clock_icon" :icon="['far', 'clock']" size="lg" :style="{ color: '#2c1338' }" />
-                    {{ article.length }} MIN READ
+                    {{ article.length }} {{ lenText[selectedLang] }}
                   </div>
                 </div>
               </div>
@@ -74,17 +74,22 @@ export default {
     return {
       pageTitle: {
         "de": {
-          "normal": "Recent Articles",
+          "normal": "Aktuelle Beiträge",
           // "colored": "Artikel"
         },
         "en": {
-          "normal": "Recent Articles",
+          "normal": "Latest Uploads",
           // "colored": "Articles"
         },
         "bg": {
-          "normal": "Recent Articles",
+          "normal": "Скорошни публикации",
           // "colored": "Статии"
         }
+      },
+      lenText: {
+        "de": "MIN",
+        "en": "MIN",
+        "bg": "МИН"
       }
     };
   },
