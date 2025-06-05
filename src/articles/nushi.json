@@ -1,13 +1,9 @@
 {
     "id": "nushi.json",
     "type": {
-
-
         "en": "article",
         "de": "Artikel",
         "bg": "статия"
-
-
     },
 
 
@@ -18,14 +14,11 @@
         "en": "Underground Echoes: Yanichka Nushi – Samodiva of Thunder and Whisper",
         "de": "Underground Echoes: Yanichka Nushi – Die Samodiva von Donner und Flüstern",
         "bg": "Underground Echoes: Yanichka Nushi – Самодивата с гръм и шепот"
-
-
     },
 
 
     "date": "2025-05-30",
     "thumbnail": "/images/darsy/darsy1.jpg",
-
 
     "text": {
         "en": " ",
@@ -54,4 +47,3 @@
                     "bg": " "
                 }
             }
-            ] 
