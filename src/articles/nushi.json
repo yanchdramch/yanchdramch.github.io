@@ -1,0 +1,242 @@
+{
+    "id": "nushi.json",
+
+
+    "type": {
+
+
+        "en": "article",
+
+
+        "de": "Artikel",
+
+
+        "bg": "статия"
+
+
+    },
+
+
+    "length": 5,
+
+
+    "title": {
+
+
+        "en": "Underground Echoes: Yanichka Nushi – Samodiva of Thunder and Whisper",
+
+
+        "de": "Underground Echoes: Yanichka Nushi – Die Samodiva von Donner und Flüstern",
+
+
+        "bg": "Underground Echoes: Yanichka Nushi – Самодивата с гръм и шепот"
+
+
+    },
+
+
+    "date": "2025-05-30",
+
+
+    "thumbnail": "/images/darsy/darsy1.jpg",
+
+
+    "text": {
+
+
+        "en": " ",
+
+
+        "de": " ",
+
+
+        "bg": " "
+
+
+    },
+
+
+    "elements": [
+
+
+        { "type": "photo", "propList": { "src": "/images/darsy/darsy1.jpg", "alt": "Some text to show if image does not load", "width": "550px" }},
+
+
+        { 
+
+
+            "type": "paragraph",
+
+
+            "propList": { 
+
+
+                "text": {
+
+
+                    "en": " 1 ",
+
+
+                    "de": " ",
+
+
+                    "bg": " "
+
+
+                }
+
+
+            }
+
+
+        },
+
+
+        { 
+
+
+            "type": "paragraph",
+
+
+            "propList": { 
+
+
+                "text": {
+
+
+                    "en": " 2 ",
+
+
+                    "de": " ",
+
+
+                    "bg": " "
+
+
+                }
+
+
+            }
+
+
+        },
+
+
+        { 
+
+
+            "type": "paragraph",
+
+
+            "propList": { 
+
+
+                "text": {
+
+
+                    "en": " 3 ",
+
+
+                    "de": " ",
+
+
+                    "bg": " "
+
+
+                }
+
+
+            }
+
+
+        },
+
+
+        { 
+
+
+            "type": "paragraph",
+
+
+            "propList": { 
+
+
+                "text": {
+
+
+                    "en": " 4 ",
+
+
+                    "de": " ",
+
+
+                    "bg": " "
+
+
+                }
+
+
+            }
+
+
+        },
+
+
+        { 
+
+
+            "type": "paragraph",
+
+
+            "propList": { 
+
+
+                "text": {
+
+
+                    "en": " 5 ",
+
+
+                    "de": " ",
+
+
+                    "bg": " "
+
+
+                }
+
+
+            }
+
+
+        },
+
+
+        { 
+
+
+            "type": "paragraph",
+
+
+            "propList": { 
+
+
+                "text": {
+
+
+                    "en": " 6 ",
+
+
+                    "de": " ",
+
+
+                    "bg": " "
+
+
+                }
+
+
+            }
+
+
+        },
