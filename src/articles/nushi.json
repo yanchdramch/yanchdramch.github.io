@@ -108,7 +108,6 @@
                }
             }
         },
-    { "type": "photo", "propList": { "src": "/images/nushi profil.jpg", "alt": "Some text to show if image does not load", "width": "550px" }},
         {
             "type": "paragraph",
             "propList": {
