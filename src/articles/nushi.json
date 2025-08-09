@@ -87,13 +87,7 @@
                }
             }
         },
-        {
-            "type": "paragraph",
-            "propList": {
-                "text": {
-                    "en": " 8 ",
-                    "de": " ",
-                    "bg": "oblovka"
+        { "type": "photo", "propList": { "src": "/images/Nushi43.jpg", "alt": "Some text to show if image does not load", "width": "550px" }}
                }
             }
         },
