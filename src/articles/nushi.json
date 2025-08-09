@@ -77,7 +77,7 @@
                }
             }
         },
-        { "type": "photo", "propList": { "src": "/images/Nushi43.jpg", "alt": "Some text to show if image does not load", "width": "550px" }}
+	{ "type": "photo", "propList": { "src": "/images/Nushi43.jpg", "alt": "Some text to show if image does not load", "width": "550px" }},
                }
             }
         },
